@@ -120,7 +120,7 @@
       <AdditionalIncludeDirectories>C:\Users\Pedro\Desktop\SFML\SFML-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\Pedro\Desktop\SFML\SFML-install\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>flac.lib;freetype.lib;ogg.lib;openal32.lib;sfml-audio-d.lib;sfml-graphics-d.lib;sfml-main-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -143,8 +143,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MyObjects\BoxShape.cpp" />
+    <ClCompile Include="MyObjects\ButtonInterface.cpp" />
+    <ClCompile Include="MyObjects\MathModule.cpp" />
+    <ClCompile Include="MyObjects\CasinoGame.cpp" />
+    <ClCompile Include="MyObjects\ButtonShape.cpp" />
+    <ClCompile Include="MyObjects\CustomSound.cpp" />
+    <ClCompile Include="MyObjects\ParticleInterface.cpp" />
+    <ClCompile Include="MyObjects\PolyParticleShape.cpp" />
+    <ClCompile Include="MyObjects\TextShape.cpp" />
+    <ClCompile Include="MyObjects\WindowManager.cpp" />
+    <ClCompile Include="MyObjects\WindowModel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyObjects\BoxShape.hpp" />
+    <ClInclude Include="MyObjects\ButtonInterface.hpp" />
+    <ClInclude Include="MyObjects\CasinoGame.hpp" />
+    <ClInclude Include="MyObjects\ParticleInterface.hpp" />
+    <ClInclude Include="MyObjects\PolyParticleShape.hpp" />
+    <ClInclude Include="MyObjects\WindowInterface.hpp" />
+    <ClInclude Include="MyObjects\MathModule.hpp" />
+    <ClInclude Include="MyObjects\ButtonShape.hpp" />
+    <ClInclude Include="MyObjects\CustomSound.hpp" />
+    <ClInclude Include="MyObjects\TextShape.hpp" />
+    <ClInclude Include="MyObjects\WindowManager.hpp" />
+    <ClInclude Include="MyObjects\WindowModel.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
