@@ -7,15 +7,8 @@
 ******************************************************************/
 
 #include "MyObjects/WindowManager.hpp"
-#include "MyObjects/CustomSound.hpp"
-
-#include "MyObjects/ButtonShape.hpp"
-#include "MyObjects/TextShape.hpp"
 #include "MyObjects/CasinoGame.hpp"
-#include <SFML/Graphics.hpp>
-
 #include "MyObjects/WindowModel.hpp"
-#include "MyObjects/MathModule.hpp"
 
 #include <memory>
 #include <iostream>
@@ -28,7 +21,7 @@ int main() {
 	//window init:
 	int fps = 60;
 	float deltaTimeS = 1 / float(fps);
-	WindowManager::createWindow("A Casino Game", sf::Vector2u(800, 600), fps);
+	WindowManager::createWindow("A Casino Game", sf::Vector2u(800, 600), fps, "MyResources/Icons/ACasinoGame.png");
 	std::shared_ptr<WindowModel> windowModel = WindowManager::getWindowModel("A Casino Game");
 
 	//game init

@@ -32,9 +32,10 @@ public:
 	 * @param title The title of the window (unique).
 	 * @param dims The dimensions of the window.
 	 * @param fps The frames per second of refresh rate.
+	 * @param iconPath The window icon path.
 	 * @return The value true if a window was created, false if the window name already exists.
 	 */
-	static bool createWindow(const std::string& title, const sf::Vector2u& dims, int fps = 60);
+	static bool createWindow(const std::string& title, const sf::Vector2u& dims, int fps = 60, const std::string& iconPath = "");
 
 	/**
 	 * @brief Method which allows access to the WindowModels owned by WindowManager.

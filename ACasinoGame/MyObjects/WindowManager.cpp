@@ -21,7 +21,7 @@ WindowManager& WindowManager::getInstance()
 	return instance;
 }
 
-bool WindowManager::createWindow(const std::string& title, const sf::Vector2u& dims, int fps)
+bool WindowManager::createWindow(const std::string& title, const sf::Vector2u& dims, int fps, const std::string& iconPath)
 {
 	if (getInstance().m_windowModelMap.count(title) == 0) {
 		getInstance().m_windowModelMap[title] =
@@ -29,6 +29,15 @@ bool WindowManager::createWindow(const std::string& title, const sf::Vector2u& d
 
 		getInstance().m_windowModelMap[title]->setFramerateLimit(fps);
 
+		if (!iconPath.empty()) {
+			sf::Image icon;
+			if (icon.loadFromFile(iconPath)) {
+				getInstance().m_windowModelMap[title]->setIcon(icon.getSize(), icon.getPixelsPtr());
+			}
+			else {
+				throw("CAN'T LOAD ICON: " + iconPath);
+			}
+		}
 		return true;
 	}
 	else {
