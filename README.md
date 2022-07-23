@@ -9,4 +9,4 @@ To run the game, you may find it on the paths:
 (under dev.)\Intallations\linux\
 
 Until next time,
-PEdro Lino
+Pedro Lino
