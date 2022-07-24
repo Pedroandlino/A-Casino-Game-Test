@@ -1,12 +1,26 @@
-# A-Casino-Game-Test
+# A Casino Game Test
 A Casino Game Test
 
 Hello!
 Thank you for visiting this repository.
+This was a test project for the development of a game using SFML libraries, and C++. 
+
+# Projects
+Both projects for Linux and Windows are in their respective folders.
+Windows version was 10, built with x64, and the Linux version was Ubuntu 14.
+The compilers used were Microsoft Visual studio and CMake respectively.
+On Windows the project was built using C++17, and on Linux C++14 (which used boost).
+
+# Running the Game
+![Alt text](ReadmeResources/GamePhoto.png?raw=true "Running Game Photo")
 
 To run the game, you may find it on the paths:
-(windows)\Intallations\windows\
-(under dev.)\Intallations\linux\
+For Windows: \Runnables\windows\ACasinoGame.exe
+For Linux: \Runnables\linux\bin\ACasinoGame
+
+
+# Final notes:
+(ongoing) The linux project still has some rendering aspec-ratio bugs, functionality works fine, however the button collisions appear unperceptible on the dark bottom side of the screen.
 
 Until next time,
-Pedro Lino
+Author: Pedro Lino
