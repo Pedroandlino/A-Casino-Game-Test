@@ -190,16 +190,19 @@ void CasinoGame::initButtons()
 	startButton->setTexture("MyResources/Textures/chessButton.png", BoxShape::Mask1);
 	startButton->swapTexture(BoxShape::Mask0);
 	startButton->setHoverSound("MyResources/Sounds/hover.ogg");
+	startButton->resetContent("START");
 
 	boost::shared_ptr<ButtonShape> creditsInButton =
 		boost::shared_ptr<ButtonShape>(new ButtonShape("CREDITS IN", { (m_winSize.x / 2.0f), shapeHeight }, shapeSize, sf::Color::Green, sf::Color::White));
 	creditsInButton->setTexture("MyResources/Textures/cristalButton.png");
 	creditsInButton->setHoverSound("MyResources/Sounds/hover.ogg");
+	creditsInButton->resetContent("CREDITS IN");
 
 	boost::shared_ptr<ButtonShape> creditsOutButton =
 		boost::shared_ptr<ButtonShape>(new ButtonShape("CREDITS OUT", { (m_winSize.x / 2.0f) + 150 + 20, shapeHeight }, shapeSize, sf::Color::Red, sf::Color::White));
 	creditsOutButton->setTexture("MyResources/Textures/cristalButton.png");
 	creditsOutButton->setHoverSound("MyResources/Sounds/hover.ogg");
+	creditsOutButton->resetContent("CREDITS OUT");
 
 	//add to map, in order to be rendered:
 	m_shapeMap["StartButton"] = { boost::dynamic_pointer_cast<WindowInterface>(startButton) ,int(WindowModel::l2) };

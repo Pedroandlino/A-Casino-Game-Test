@@ -13,7 +13,7 @@
 
 WindowModel::WindowModel(const std::string& title, const sf::Vector2u& size) :
 	sf::RenderWindow(sf::VideoMode(size), title,
-		sf::Style::Close | sf::Style::Titlebar), // | sf::Style::Resize no resize!
+		sf::Style::Close | sf::Style::Titlebar), //TODO: | sf::Style::Resize no resize, for now!
 	m_originalSize(size)
 {
 	sf::View view({ 0.5f * size.x, 0.5f * size.y }, { float(size.x), float(size.y) });
@@ -25,12 +25,13 @@ WindowModel::~WindowModel()
 
 void WindowModel::onResize()
 {
-	float originalAR = m_originalSize.x / float(m_originalSize.y);
+	//TODO: setup responsivity of the Window
+	/*float originalAR = m_originalSize.x / float(m_originalSize.y);
 
 	sf::View view = this->getView();
 	view.setSize({ float(this->getSize().x), float(this->getSize().y * originalAR) });
 	view.setCenter({ 0.5f * this->getSize().x, 0.5f * this->getSize().y * originalAR });
-	this->setView(view);
+	this->setView(view);*/
 
 	RenderWindow::onResize();
 }

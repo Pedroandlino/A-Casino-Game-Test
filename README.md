@@ -16,11 +16,10 @@ On Windows the project was built using C++17, and on Linux C++14 (which used boo
 
 To run the game, you may find it on the paths:
 For Windows: \Runnables\windows\ACasinoGame.exe
-For Linux: \Runnables\linux\bin\ACasinoGame
+For Linux: \Runnables\linux\ACasinoGame
 
 
 # Final notes:
-(ongoing) The linux project still has some rendering aspec-ratio bugs, functionality works fine, however the button collisions appear unperceptible on the dark bottom side of the screen.
 
 Until next time,
 Author: Pedro Lino
