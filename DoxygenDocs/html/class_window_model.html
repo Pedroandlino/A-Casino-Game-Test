@@ -75,7 +75,7 @@ $(function() {
 <p><a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> class inherits RenderWindow so that more functionalities and interfaces can be added to each window objects. Some of the main functionalities of this class are: holding the renference to objects that can be rendered, rendering these objects on calling <a class="el" href="class_window_model.html#a4bacaa6f86aa8c6a42e02944979f3862" title="Method which draws the children shapes of type WindowInterface.">drawChildren()</a> render them by layer order to pass OpenGL Z-Buffer Test.  
  <a href="class_window_model.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_window_model_8hpp_source.html">WindowModel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_linux_2include_2_window_model_8hpp_source.html">WindowModel.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WindowModel:</div>
 <div class="dyncontent">
@@ -93,6 +93,32 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<b>l4</b>
 , <b>l5</b>
+, <b>l0</b>
+, <b>l1</b>
+, <br />
+&#160;&#160;<b>l2</b>
+, <b>l3</b>
+, <b>l4</b>
+, <b>l5</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a668e65c77cddd4b0405826b2479e9244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type which identifies the OpenGL Z-test render layer. <br /></td></tr>
+<tr class="separator:a668e65c77cddd4b0405826b2479e9244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668e65c77cddd4b0405826b2479e9244"><td class="memItemLeft" align="right" valign="top"><a id="a668e65c77cddd4b0405826b2479e9244" name="a668e65c77cddd4b0405826b2479e9244"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_model.html#a668e65c77cddd4b0405826b2479e9244">Layer</a> { <br />
+&#160;&#160;<b>l0</b>
+, <b>l1</b>
+, <b>l2</b>
+, <b>l3</b>
+, <br />
+&#160;&#160;<b>l4</b>
+, <b>l5</b>
+, <b>l0</b>
+, <b>l1</b>
+, <br />
+&#160;&#160;<b>l2</b>
+, <b>l3</b>
+, <b>l4</b>
+, <b>l5</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a668e65c77cddd4b0405826b2479e9244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type which identifies the OpenGL Z-test render layer. <br /></td></tr>
@@ -100,6 +126,26 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad18682720c8610eea55362aed8dbe3a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_model.html#ad18682720c8610eea55362aed8dbe3a2">WindowModel</a> (const std::string &amp;title, const sf::Vector2u &amp;size)</td></tr>
+<tr class="memdesc:ad18682720c8610eea55362aed8dbe3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_window_model.html#ad18682720c8610eea55362aed8dbe3a2">More...</a><br /></td></tr>
+<tr class="separator:ad18682720c8610eea55362aed8dbe3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb0edb75c590d26e6752debd592834a"><td class="memItemLeft" align="right" valign="top"><a id="a3bb0edb75c590d26e6752debd592834a" name="a3bb0edb75c590d26e6752debd592834a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~WindowModel</b> ()</td></tr>
+<tr class="memdesc:a3bb0edb75c590d26e6752debd592834a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:a3bb0edb75c590d26e6752debd592834a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3581ec140c165c6fbd81eca12ea47234"><td class="memItemLeft" align="right" valign="top"><a id="a3581ec140c165c6fbd81eca12ea47234" name="a3581ec140c165c6fbd81eca12ea47234"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onResize</b> () override</td></tr>
+<tr class="separator:a3581ec140c165c6fbd81eca12ea47234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af776bbef6848145b724f61dce5691ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_model.html#af776bbef6848145b724f61dce5691ada">addChild</a> (boost::shared_ptr&lt; <a class="el" href="class_window_interface.html">WindowInterface</a> &gt; child)</td></tr>
+<tr class="memdesc:af776bbef6848145b724f61dce5691ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which adds a child shape to be rendered on window.  <a href="class_window_model.html#af776bbef6848145b724f61dce5691ada">More...</a><br /></td></tr>
+<tr class="separator:af776bbef6848145b724f61dce5691ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6ea25c1337b5737847ab50c53c3f29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_model.html#a2d6ea25c1337b5737847ab50c53c3f29">removeButtons</a> (std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_button_interface.html">ButtonInterface</a> &gt; &gt; buttons)</td></tr>
+<tr class="memdesc:a2d6ea25c1337b5737847ab50c53c3f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which adds a child button to be rendered on window.  <a href="class_window_model.html#a2d6ea25c1337b5737847ab50c53c3f29">More...</a><br /></td></tr>
+<tr class="separator:a2d6ea25c1337b5737847ab50c53c3f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bacaa6f86aa8c6a42e02944979f3862"><td class="memItemLeft" align="right" valign="top"><a id="a4bacaa6f86aa8c6a42e02944979f3862" name="a4bacaa6f86aa8c6a42e02944979f3862"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawChildren</b> ()</td></tr>
+<tr class="memdesc:a4bacaa6f86aa8c6a42e02944979f3862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which draws the children shapes of type <a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a>. <br /></td></tr>
+<tr class="separator:a4bacaa6f86aa8c6a42e02944979f3862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18682720c8610eea55362aed8dbe3a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_model.html#ad18682720c8610eea55362aed8dbe3a2">WindowModel</a> (const std::string &amp;title, const sf::Vector2u &amp;size)</td></tr>
 <tr class="memdesc:ad18682720c8610eea55362aed8dbe3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_window_model.html#ad18682720c8610eea55362aed8dbe3a2">More...</a><br /></td></tr>
 <tr class="separator:ad18682720c8610eea55362aed8dbe3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +173,14 @@ Private Attributes</h2></td></tr>
 const sf::Vector2u&#160;</td><td class="memItemRight" valign="bottom"><b>m_originalSize</b></td></tr>
 <tr class="memdesc:af2f08e543c079d82a1fdd5b278782033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the original window size from when <a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> was created. <br /></td></tr>
 <tr class="separator:af2f08e543c079d82a1fdd5b278782033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024b4e06588f545945b670c8f7cdf0ef"><td class="memItemLeft" align="right" valign="top"><a id="a024b4e06588f545945b670c8f7cdf0ef" name="a024b4e06588f545945b670c8f7cdf0ef"></a>
+std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_window_interface.html">WindowInterface</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_children</b></td></tr>
+<tr class="memdesc:a024b4e06588f545945b670c8f7cdf0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the vector of <a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> references (not the owner). <br /></td></tr>
+<tr class="separator:a024b4e06588f545945b670c8f7cdf0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3ceef6ff09419c702c268ff17806a0"><td class="memItemLeft" align="right" valign="top"><a id="a4b3ceef6ff09419c702c268ff17806a0" name="a4b3ceef6ff09419c702c268ff17806a0"></a>
+std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_button_interface.html">ButtonInterface</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_buttons</b></td></tr>
+<tr class="memdesc:a4b3ceef6ff09419c702c268ff17806a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the vector of <a class="el" href="class_button_interface.html" title="ButtonInterface class used to interface buttons to be rendered on a window and enables reactions to w...">ButtonInterface</a> references (not the owner). <br /></td></tr>
+<tr class="separator:a4b3ceef6ff09419c702c268ff17806a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e40d39d1932b90e4be2625f9dd73173"><td class="memItemLeft" align="right" valign="top"><a id="a2e40d39d1932b90e4be2625f9dd73173" name="a2e40d39d1932b90e4be2625f9dd73173"></a>
 std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_window_interface.html">WindowInterface</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_children</b></td></tr>
 <tr class="memdesc:a2e40d39d1932b90e4be2625f9dd73173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the vector of <a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> references (not the owner). <br /></td></tr>
@@ -140,7 +194,44 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_button_interface.h
 <div class="textblock"><p ><a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> class inherits RenderWindow so that more functionalities and interfaces can be added to each window objects. Some of the main functionalities of this class are: holding the renference to objects that can be rendered, rendering these objects on calling <a class="el" href="class_window_model.html#a4bacaa6f86aa8c6a42e02944979f3862" title="Method which draws the children shapes of type WindowInterface.">drawChildren()</a> render them by layer order to pass OpenGL Z-Buffer Test. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad18682720c8610eea55362aed8dbe3a2" name="ad18682720c8610eea55362aed8dbe3a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad18682720c8610eea55362aed8dbe3a2">&#9670;&nbsp;</a></span>WindowModel()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18682720c8610eea55362aed8dbe3a2">&#9670;&nbsp;</a></span>WindowModel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WindowModel::WindowModel </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::Vector2u &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>The title of the renderer window. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the renderer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad18682720c8610eea55362aed8dbe3a2" name="ad18682720c8610eea55362aed8dbe3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18682720c8610eea55362aed8dbe3a2">&#9670;&nbsp;</a></span>WindowModel() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,8 +268,34 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_button_interface.h
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af776bbef6848145b724f61dce5691ada" name="af776bbef6848145b724f61dce5691ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af776bbef6848145b724f61dce5691ada">&#9670;&nbsp;</a></span>addChild() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WindowModel::addChild </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_window_interface.html">WindowInterface</a> &gt;&#160;</td>
+          <td class="paramname"><em>child</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which adds a child shape to be rendered on window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>The child shape of <a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af5956c0d67facc85933aed48adf94e6a" name="af5956c0d67facc85933aed48adf94e6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5956c0d67facc85933aed48adf94e6a">&#9670;&nbsp;</a></span>addChild()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5956c0d67facc85933aed48adf94e6a">&#9670;&nbsp;</a></span>addChild() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,8 +320,34 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_button_interface.h
 
 </div>
 </div>
+<a id="a2d6ea25c1337b5737847ab50c53c3f29" name="a2d6ea25c1337b5737847ab50c53c3f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6ea25c1337b5737847ab50c53c3f29">&#9670;&nbsp;</a></span>removeButtons() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WindowModel::removeButtons </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_button_interface.html">ButtonInterface</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>buttons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which adds a child button to be rendered on window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttons</td><td>The child shape of <a class="el" href="class_button_interface.html" title="ButtonInterface class used to interface buttons to be rendered on a window and enables reactions to w...">ButtonInterface</a> type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9eb7c5740ca580c52c6d3c0dc59f8dab" name="a9eb7c5740ca580c52c6d3c0dc59f8dab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eb7c5740ca580c52c6d3c0dc59f8dab">&#9670;&nbsp;</a></span>removeButtons()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb7c5740ca580c52c6d3c0dc59f8dab">&#9670;&nbsp;</a></span>removeButtons() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,8 +373,10 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_button_interface.h
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/<a class="el" href="_window_model_8hpp_source.html">WindowModel.hpp</a></li>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/WindowModel.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/include/<a class="el" href="_linux_2include_2_window_model_8hpp_source.html">WindowModel.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/<a class="el" href="_windows_2_a_casino_game_2_my_objects_2_window_model_8hpp_source.html">WindowModel.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/src/WindowModel.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/WindowModel.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

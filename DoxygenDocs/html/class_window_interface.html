@@ -73,17 +73,29 @@ $(function() {
 <p><a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> class is an interface to enable objects to be rendered to be drawn to a specific window, the idea is that the window can call objects with this interface to render them when they're supposed to be rendered.  
  <a href="class_window_interface.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_window_interface_8hpp_source.html">WindowInterface.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_linux_2include_2_window_interface_8hpp_source.html">WindowInterface.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WindowInterface:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_window_interface.png" usemap="#WindowInterface_map" alt=""/>
   <map id="WindowInterface_map" name="WindowInterface_map">
-<area href="class_box_shape.html" title="BoxShape class used for rectangular shapes with textures to be rendered." alt="BoxShape" shape="rect" coords="0,56,116,80"/>
-<area href="class_poly_particle_shape.html" title="PolyParticleShape class is particle shape, composed from n vertices it was initially thougth out to g..." alt="PolyParticleShape" shape="rect" coords="126,56,242,80"/>
+<area href="class_box_shape.html" title="BoxShape class used for rectangular shapes with textures to be rendered." alt="BoxShape" shape="rect" coords="126,56,242,80"/>
+<area href="class_box_shape.html" title="BoxShape class used for rectangular shapes with textures to be rendered." alt="BoxShape" shape="rect" coords="630,56,746,80"/>
+<area href="class_poly_particle_shape.html" title="PolyParticleShape class is particle shape, composed from n vertices it was initially thougth out to g..." alt="PolyParticleShape" shape="rect" coords="756,56,872,80"/>
+<area href="class_poly_particle_shape.html" title="PolyParticleShape class is particle shape, composed from n vertices it was initially thougth out to g..." alt="PolyParticleShape" shape="rect" coords="882,56,998,80"/>
 <area href="class_text_shape.html" title="TextShape class purpose is to initilize BoxShapes with texts within it can be used without a texture,..." alt="TextShape" shape="rect" coords="0,112,116,136"/>
-<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="0,168,116,192"/>
+<area href="class_text_shape.html" title="TextShape class purpose is to initilize BoxShapes with texts within it can be used without a texture,..." alt="TextShape" shape="rect" coords="252,112,368,136"/>
+<area href="class_text_shape.html" title="TextShape class purpose is to initilize BoxShapes with texts within it can be used without a texture,..." alt="TextShape" shape="rect" coords="504,112,620,136"/>
+<area href="class_text_shape.html" title="TextShape class purpose is to initilize BoxShapes with texts within it can be used without a texture,..." alt="TextShape" shape="rect" coords="756,112,872,136"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="126,168,242,192"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="126,224,242,248"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="378,168,494,192"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="378,224,494,248"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="630,168,746,192"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="630,224,746,248"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="882,168,998,192"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="882,224,998,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -100,12 +112,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33f6e6b4e167fe553b7243a64268aa7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_interface.html#a33f6e6b4e167fe553b7243a64268aa7b">drawTo</a> (sf::RenderWindow *window)=0</td></tr>
 <tr class="memdesc:a33f6e6b4e167fe553b7243a64268aa7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which draws a shape to a specific window.  <a href="class_window_interface.html#a33f6e6b4e167fe553b7243a64268aa7b">More...</a><br /></td></tr>
 <tr class="separator:a33f6e6b4e167fe553b7243a64268aa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765d563de4e588d9c0af02a44c3c547e"><td class="memItemLeft" align="right" valign="top"><a id="a765d563de4e588d9c0af02a44c3c547e" name="a765d563de4e588d9c0af02a44c3c547e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WindowInterface</b> ()=default</td></tr>
+<tr class="memdesc:a765d563de4e588d9c0af02a44c3c547e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a765d563de4e588d9c0af02a44c3c547e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef58b640a5ebb91de98d59de8986af39"><td class="memItemLeft" align="right" valign="top"><a id="aef58b640a5ebb91de98d59de8986af39" name="aef58b640a5ebb91de98d59de8986af39"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~WindowInterface</b> ()=default</td></tr>
+<tr class="memdesc:aef58b640a5ebb91de98d59de8986af39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:aef58b640a5ebb91de98d59de8986af39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f6e6b4e167fe553b7243a64268aa7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_interface.html#a33f6e6b4e167fe553b7243a64268aa7b">drawTo</a> (sf::RenderWindow *window)=0</td></tr>
+<tr class="memdesc:a33f6e6b4e167fe553b7243a64268aa7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which draws a shape to a specific window.  <a href="class_window_interface.html#a33f6e6b4e167fe553b7243a64268aa7b">More...</a><br /></td></tr>
+<tr class="separator:a33f6e6b4e167fe553b7243a64268aa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> class is an interface to enable objects to be rendered to be drawn to a specific window, the idea is that the window can call objects with this interface to render them when they're supposed to be rendered. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a33f6e6b4e167fe553b7243a64268aa7b" name="a33f6e6b4e167fe553b7243a64268aa7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33f6e6b4e167fe553b7243a64268aa7b">&#9670;&nbsp;</a></span>drawTo()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f6e6b4e167fe553b7243a64268aa7b">&#9670;&nbsp;</a></span>drawTo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,12 +159,49 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_box_shape.html#a0da694771e1da45d99ee2c6d2f4d5427">BoxShape</a>, <a class="el" href="class_button_shape.html#ad52bfabfa335330660aaf484d0620880">ButtonShape</a>, <a class="el" href="class_poly_particle_shape.html#aa32b3a45abdcffd6948d1cd66ca3709b">PolyParticleShape</a>, and <a class="el" href="class_text_shape.html#ad16fe48292a07a7be0239186d49380a9">TextShape</a>.</p>
+<p>Implemented in <a class="el" href="class_box_shape.html#a0da694771e1da45d99ee2c6d2f4d5427">BoxShape</a>, <a class="el" href="class_button_shape.html#ad52bfabfa335330660aaf484d0620880">ButtonShape</a>, <a class="el" href="class_poly_particle_shape.html#aa32b3a45abdcffd6948d1cd66ca3709b">PolyParticleShape</a>, <a class="el" href="class_text_shape.html#ad16fe48292a07a7be0239186d49380a9">TextShape</a>, <a class="el" href="class_box_shape.html#a6c5dcf794e0da3fcd4cc55441bcf982d">BoxShape</a>, <a class="el" href="class_button_shape.html#ac57aff98ecf51cdb0c5b967eb6805af7">ButtonShape</a>, <a class="el" href="class_poly_particle_shape.html#aa32b3a45abdcffd6948d1cd66ca3709b">PolyParticleShape</a>, and <a class="el" href="class_text_shape.html#a6658e9286dfd732a48f53a1d906c6cbb">TextShape</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/<a class="el" href="_window_interface_8hpp_source.html">WindowInterface.hpp</a></li>
+<a id="a33f6e6b4e167fe553b7243a64268aa7b" name="a33f6e6b4e167fe553b7243a64268aa7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f6e6b4e167fe553b7243a64268aa7b">&#9670;&nbsp;</a></span>drawTo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void WindowInterface::drawTo </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which draws a shape to a specific window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window object reference. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_box_shape.html#a0da694771e1da45d99ee2c6d2f4d5427">BoxShape</a>, <a class="el" href="class_button_shape.html#ad52bfabfa335330660aaf484d0620880">ButtonShape</a>, <a class="el" href="class_poly_particle_shape.html#aa32b3a45abdcffd6948d1cd66ca3709b">PolyParticleShape</a>, <a class="el" href="class_text_shape.html#ad16fe48292a07a7be0239186d49380a9">TextShape</a>, <a class="el" href="class_box_shape.html#a6c5dcf794e0da3fcd4cc55441bcf982d">BoxShape</a>, <a class="el" href="class_button_shape.html#ac57aff98ecf51cdb0c5b967eb6805af7">ButtonShape</a>, <a class="el" href="class_poly_particle_shape.html#aa32b3a45abdcffd6948d1cd66ca3709b">PolyParticleShape</a>, and <a class="el" href="class_text_shape.html#a6658e9286dfd732a48f53a1d906c6cbb">TextShape</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/include/<a class="el" href="_linux_2include_2_window_interface_8hpp_source.html">WindowInterface.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/<a class="el" href="_windows_2_a_casino_game_2_my_objects_2_window_interface_8hpp_source.html">WindowInterface.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

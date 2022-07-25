@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['oncreditsinbutton_0',['onCreditsInButton',['../class_casino_game.html#a68df86f4df40edfca56261dc33fa7255',1,'CasinoGame']]],
-  ['oncreditsoutbutton_1',['onCreditsOutButton',['../class_casino_game.html#ab2c42b3036a70bd25e3e5ff8e513baab',1,'CasinoGame']]],
-  ['onstartbutton_2',['onStartButton',['../class_casino_game.html#a5fd57264226651a539a99dd69a2d15cb',1,'CasinoGame']]],
-  ['onwindowevent_3',['onWindowEvent',['../class_button_interface.html#a9eb03a5ae5bb0523d915330c8baae99b',1,'ButtonInterface::onWindowEvent()'],['../class_button_shape.html#ad6297cbdd03ce3d4c5a75d36638e2076',1,'ButtonShape::onWindowEvent()']]]
+  ['oncreditsinbutton_0',['onCreditsInButton',['../class_casino_game.html#a68df86f4df40edfca56261dc33fa7255',1,'CasinoGame::onCreditsInButton(std::map&lt; std::string, void * &gt; argsMap)'],['../class_casino_game.html#a781d9ca55b68f80e1156815778d92f64',1,'CasinoGame::onCreditsInButton(std::map&lt; std::string, void * &gt; argsMap)']]],
+  ['oncreditsoutbutton_1',['onCreditsOutButton',['../class_casino_game.html#ab2c42b3036a70bd25e3e5ff8e513baab',1,'CasinoGame::onCreditsOutButton(std::map&lt; std::string, void * &gt; argsMap)'],['../class_casino_game.html#ac701bd504e66682962558c13035dd4d4',1,'CasinoGame::onCreditsOutButton(std::map&lt; std::string, void * &gt; argsMap)']]],
+  ['onstartbutton_2',['onStartButton',['../class_casino_game.html#a5fd57264226651a539a99dd69a2d15cb',1,'CasinoGame::onStartButton(std::map&lt; std::string, void * &gt; argsMap)'],['../class_casino_game.html#a12c1d52fda9c18beeea57da2dc7893c9',1,'CasinoGame::onStartButton(std::map&lt; std::string, void * &gt; argsMap)']]],
+  ['onwindowevent_3',['onWindowEvent',['../class_button_interface.html#a9eb03a5ae5bb0523d915330c8baae99b',1,'ButtonInterface::onWindowEvent()'],['../class_button_shape.html#ad6297cbdd03ce3d4c5a75d36638e2076',1,'ButtonShape::onWindowEvent()'],['../class_button_interface.html#a9eb03a5ae5bb0523d915330c8baae99b',1,'ButtonInterface::onWindowEvent()'],['../class_button_shape.html#a65aa47208f671bc736381741dd4e977f',1,'ButtonShape::onWindowEvent()']]]
 ];

@@ -75,7 +75,7 @@ $(function() {
 <p><a class="el" href="class_particle_interface.html" title="ParticleInterface class hadles common behaviour of particles and their properties,...">ParticleInterface</a> class hadles common behaviour of particles and their properties, as well as forcing the implementation of common behaviours of such.  
  <a href="class_particle_interface.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_particle_interface_8hpp_source.html">ParticleInterface.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_linux_2include_2_particle_interface_8hpp_source.html">ParticleInterface.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ParticleInterface:</div>
 <div class="dyncontent">
@@ -83,6 +83,7 @@ Inheritance diagram for ParticleInterface:</div>
   <img src="class_particle_interface.png" usemap="#ParticleInterface_map" alt=""/>
   <map id="ParticleInterface_map" name="ParticleInterface_map">
 <area href="class_poly_particle_shape.html" title="PolyParticleShape class is particle shape, composed from n vertices it was initially thougth out to g..." alt="PolyParticleShape" shape="rect" coords="0,56,116,80"/>
+<area href="class_poly_particle_shape.html" title="PolyParticleShape class is particle shape, composed from n vertices it was initially thougth out to g..." alt="PolyParticleShape" shape="rect" coords="126,56,242,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -141,6 +142,53 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a952cfb112cae8039fd5857977caff0c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_particle_interface_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a952cfb112cae8039fd5857977caff0c0">getState</a> () const</td></tr>
 <tr class="memdesc:a952cfb112cae8039fd5857977caff0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which gets the current internal state of the particle.  <a href="class_particle_interface.html#a952cfb112cae8039fd5857977caff0c0">More...</a><br /></td></tr>
 <tr class="separator:a952cfb112cae8039fd5857977caff0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e1ea3ddb9712c0f65abc76b0f68a55"><td class="memItemLeft" align="right" valign="top"><a id="a13e1ea3ddb9712c0f65abc76b0f68a55" name="a13e1ea3ddb9712c0f65abc76b0f68a55"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ParticleInterface</b> ()</td></tr>
+<tr class="memdesc:a13e1ea3ddb9712c0f65abc76b0f68a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a13e1ea3ddb9712c0f65abc76b0f68a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87684c874989a6870bc2befcd7af83b5"><td class="memItemLeft" align="right" valign="top"><a id="a87684c874989a6870bc2befcd7af83b5" name="a87684c874989a6870bc2befcd7af83b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~ParticleInterface</b> ()=default</td></tr>
+<tr class="memdesc:a87684c874989a6870bc2befcd7af83b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:a87684c874989a6870bc2befcd7af83b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e4ca051d0e50b515f5560c34965685"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#af7e4ca051d0e50b515f5560c34965685">updatePhysics</a> (float deltaTime)=0</td></tr>
+<tr class="memdesc:af7e4ca051d0e50b515f5560c34965685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which forces child classes to update the internal state of the object based on deltaTime.  <a href="class_particle_interface.html#af7e4ca051d0e50b515f5560c34965685">More...</a><br /></td></tr>
+<tr class="separator:af7e4ca051d0e50b515f5560c34965685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab5deb6a3b11d5e264b9fe1f071acfa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#adab5deb6a3b11d5e264b9fe1f071acfa">setBirthState</a> (const <a class="el" href="struct_particle_interface_1_1_state.html">State</a> &amp;state, float timeOfBirth=0)=0</td></tr>
+<tr class="memdesc:adab5deb6a3b11d5e264b9fe1f071acfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which forces child classes to set the internal birth state of the object.  <a href="class_particle_interface.html#adab5deb6a3b11d5e264b9fe1f071acfa">More...</a><br /></td></tr>
+<tr class="separator:adab5deb6a3b11d5e264b9fe1f071acfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23701805218c0874732149de1a26d0d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a23701805218c0874732149de1a26d0d4">setResetState</a> (const <a class="el" href="struct_particle_interface_1_1_state.html">State</a> &amp;state)=0</td></tr>
+<tr class="memdesc:a23701805218c0874732149de1a26d0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which forces child classes to set the internal reset state of the object.  <a href="class_particle_interface.html#a23701805218c0874732149de1a26d0d4">More...</a><br /></td></tr>
+<tr class="separator:a23701805218c0874732149de1a26d0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8920d5fa88d0dfe46b0ed481b0db69"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a4c8920d5fa88d0dfe46b0ed481b0db69">birth</a> ()=0</td></tr>
+<tr class="memdesc:a4c8920d5fa88d0dfe46b0ed481b0db69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which forces child classes to implement a birth behaviour.  <a href="class_particle_interface.html#a4c8920d5fa88d0dfe46b0ed481b0db69">More...</a><br /></td></tr>
+<tr class="separator:a4c8920d5fa88d0dfe46b0ed481b0db69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc0d7e7e1c02243d6c7904c057c37a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#aafc0d7e7e1c02243d6c7904c057c37a3">death</a> ()=0</td></tr>
+<tr class="memdesc:aafc0d7e7e1c02243d6c7904c057c37a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which forces child classes to implement a death behaviour.  <a href="class_particle_interface.html#aafc0d7e7e1c02243d6c7904c057c37a3">More...</a><br /></td></tr>
+<tr class="separator:aafc0d7e7e1c02243d6c7904c057c37a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6675508ad37eff7ea8950b876da389f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a6675508ad37eff7ea8950b876da389f4">resetToBirthState</a> ()=0</td></tr>
+<tr class="memdesc:a6675508ad37eff7ea8950b876da389f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which forces child classes to implement a resetToBirthState behaviour.  <a href="class_particle_interface.html#a6675508ad37eff7ea8950b876da389f4">More...</a><br /></td></tr>
+<tr class="separator:a6675508ad37eff7ea8950b876da389f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4069594865272f569aa54150591d4d1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a4069594865272f569aa54150591d4d1f">setDeathCondition</a> (bool(*callback)(std::map&lt; std::string, void * &gt;), const std::map&lt; std::string, void * &gt; &amp;argsMap)</td></tr>
+<tr class="memdesc:a4069594865272f569aa54150591d4d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which sets the death vericication callback, in is called on updatePhysics.  <a href="class_particle_interface.html#a4069594865272f569aa54150591d4d1f">More...</a><br /></td></tr>
+<tr class="separator:a4069594865272f569aa54150591d4d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc241095881e484d6b81c9ba35cc70c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#abc241095881e484d6b81c9ba35cc70c2">isAlive</a> () const</td></tr>
+<tr class="memdesc:abc241095881e484d6b81c9ba35cc70c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which checks if the current particle is alive or dead.  <a href="class_particle_interface.html#abc241095881e484d6b81c9ba35cc70c2">More...</a><br /></td></tr>
+<tr class="separator:abc241095881e484d6b81c9ba35cc70c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8aebe1ba5a951eaeb7dffaf8c46e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#afb8aebe1ba5a951eaeb7dffaf8c46e99">setBirthSound</a> (const std::string &amp;path, bool activate=true)</td></tr>
+<tr class="memdesc:afb8aebe1ba5a951eaeb7dffaf8c46e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which sets and loads the birth behaviour sound.  <a href="class_particle_interface.html#afb8aebe1ba5a951eaeb7dffaf8c46e99">More...</a><br /></td></tr>
+<tr class="separator:afb8aebe1ba5a951eaeb7dffaf8c46e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011130f2e708b5bd8a0069467e67575e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a011130f2e708b5bd8a0069467e67575e">enableBirthSound</a> (bool enable)</td></tr>
+<tr class="memdesc:a011130f2e708b5bd8a0069467e67575e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which sets if the birth should be played.  <a href="class_particle_interface.html#a011130f2e708b5bd8a0069467e67575e">More...</a><br /></td></tr>
+<tr class="separator:a011130f2e708b5bd8a0069467e67575e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5899d0e496a295f8757b65c2488a5341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a5899d0e496a295f8757b65c2488a5341">setDeathSound</a> (const std::string &amp;path, bool activate=true)</td></tr>
+<tr class="memdesc:a5899d0e496a295f8757b65c2488a5341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which sets and loads the death behaviour sound.  <a href="class_particle_interface.html#a5899d0e496a295f8757b65c2488a5341">More...</a><br /></td></tr>
+<tr class="separator:a5899d0e496a295f8757b65c2488a5341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9c9b83c9778632619d62896910fc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a6c9c9b83c9778632619d62896910fc66">enableDeathSound</a> (bool enable)</td></tr>
+<tr class="memdesc:a6c9c9b83c9778632619d62896910fc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which sets if the death should be played.  <a href="class_particle_interface.html#a6c9c9b83c9778632619d62896910fc66">More...</a><br /></td></tr>
+<tr class="separator:a6c9c9b83c9778632619d62896910fc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b0ba07043cf4e3bd1daf3c6fde3908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_particle_interface_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a37b0ba07043cf4e3bd1daf3c6fde3908">getState</a> () const</td></tr>
+<tr class="memdesc:a37b0ba07043cf4e3bd1daf3c6fde3908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which gets the current internal state of the particle.  <a href="class_particle_interface.html#a37b0ba07043cf4e3bd1daf3c6fde3908">More...</a><br /></td></tr>
+<tr class="separator:a37b0ba07043cf4e3bd1daf3c6fde3908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -156,28 +204,28 @@ Protected Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>p_isAlive</b> = false</td></tr>
 <tr class="memdesc:af8096bdf4f7eefe82e4e50bed9a76159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the flag value, true if the partile is alive. <br /></td></tr>
 <tr class="separator:af8096bdf4f7eefe82e4e50bed9a76159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822cb7f0a2e535864cb459dadf8c861e"><td class="memItemLeft" align="right" valign="top"><a id="a822cb7f0a2e535864cb459dadf8c861e" name="a822cb7f0a2e535864cb459dadf8c861e"></a>
-std::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>p_birthSound</b></td></tr>
-<tr class="memdesc:a822cb7f0a2e535864cb459dadf8c861e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> reference for the birth sound, if it is allocated. <br /></td></tr>
-<tr class="separator:a822cb7f0a2e535864cb459dadf8c861e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6167217b29251ab3a91ebfb444b5c66a"><td class="memItemLeft" align="right" valign="top"><a id="a6167217b29251ab3a91ebfb444b5c66a" name="a6167217b29251ab3a91ebfb444b5c66a"></a>
+boost::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>p_birthSound</b></td></tr>
+<tr class="memdesc:a6167217b29251ab3a91ebfb444b5c66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> reference for the birth sound, if it is allocated. <br /></td></tr>
+<tr class="separator:a6167217b29251ab3a91ebfb444b5c66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a440769b593073da088f4c413d975572f"><td class="memItemLeft" align="right" valign="top"><a id="a440769b593073da088f4c413d975572f" name="a440769b593073da088f4c413d975572f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>p_birthSoundActive</b></td></tr>
 <tr class="memdesc:a440769b593073da088f4c413d975572f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the flag value, true if the birth sound is active. <br /></td></tr>
 <tr class="separator:a440769b593073da088f4c413d975572f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6add39836fa89c7160145f0e47baa8"><td class="memItemLeft" align="right" valign="top"><a id="a4a6add39836fa89c7160145f0e47baa8" name="a4a6add39836fa89c7160145f0e47baa8"></a>
-std::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>p_deathSound</b></td></tr>
-<tr class="memdesc:a4a6add39836fa89c7160145f0e47baa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> reference for the death sound, if it is allocated. <br /></td></tr>
-<tr class="separator:a4a6add39836fa89c7160145f0e47baa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6e747247b49ba8d003b625fe86362d"><td class="memItemLeft" align="right" valign="top"><a id="aed6e747247b49ba8d003b625fe86362d" name="aed6e747247b49ba8d003b625fe86362d"></a>
+boost::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>p_deathSound</b></td></tr>
+<tr class="memdesc:aed6e747247b49ba8d003b625fe86362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> reference for the death sound, if it is allocated. <br /></td></tr>
+<tr class="separator:aed6e747247b49ba8d003b625fe86362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac185e6ec6ed7db1bc49a503b6cef8f3c"><td class="memItemLeft" align="right" valign="top"><a id="ac185e6ec6ed7db1bc49a503b6cef8f3c" name="ac185e6ec6ed7db1bc49a503b6cef8f3c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>p_deathSoundActive</b></td></tr>
 <tr class="memdesc:ac185e6ec6ed7db1bc49a503b6cef8f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the flag value, true if the death sound is active. <br /></td></tr>
 <tr class="separator:ac185e6ec6ed7db1bc49a503b6cef8f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab4a17ba6835a95dc055447fa4e8e10"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#abab4a17ba6835a95dc055447fa4e8e10">p_deathCondition</a> )(std::map&lt; std::string, void * &gt;)</td></tr>
-<tr class="memdesc:abab4a17ba6835a95dc055447fa4e8e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the callback function to be called when setDeathCondition is evoked.  <a href="class_particle_interface.html#abab4a17ba6835a95dc055447fa4e8e10">More...</a><br /></td></tr>
-<tr class="separator:abab4a17ba6835a95dc055447fa4e8e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a919b971782b8edc1293fe8a9014a68c5"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a919b971782b8edc1293fe8a9014a68c5">p_deathConditionArgsMap</a></td></tr>
-<tr class="memdesc:a919b971782b8edc1293fe8a9014a68c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the parameters of the callback function to be called when setDeathCondition is evoked.  <a href="class_particle_interface.html#a919b971782b8edc1293fe8a9014a68c5">More...</a><br /></td></tr>
-<tr class="separator:a919b971782b8edc1293fe8a9014a68c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7243fc8c8de6c8cbcc9882e4bfb4df4"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#ad7243fc8c8de6c8cbcc9882e4bfb4df4">p_deathCondition</a> )(std::map&lt; std::string, void * &gt;)</td></tr>
+<tr class="memdesc:ad7243fc8c8de6c8cbcc9882e4bfb4df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the callback function to be called when setDeathCondition is evoked.  <a href="class_particle_interface.html#ad7243fc8c8de6c8cbcc9882e4bfb4df4">More...</a><br /></td></tr>
+<tr class="separator:ad7243fc8c8de6c8cbcc9882e4bfb4df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385a9eb22d0bd47e388536fe2b19950f"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_interface.html#a385a9eb22d0bd47e388536fe2b19950f">p_deathConditionArgsMap</a></td></tr>
+<tr class="memdesc:a385a9eb22d0bd47e388536fe2b19950f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the parameters of the callback function to be called when setDeathCondition is evoked.  <a href="class_particle_interface.html#a385a9eb22d0bd47e388536fe2b19950f">More...</a><br /></td></tr>
+<tr class="separator:a385a9eb22d0bd47e388536fe2b19950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d96ae47b4650d092698e653c01cddc"><td class="memItemLeft" align="right" valign="top"><a id="a51d96ae47b4650d092698e653c01cddc" name="a51d96ae47b4650d092698e653c01cddc"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeOfBirth</b></td></tr>
 <tr class="memdesc:a51d96ae47b4650d092698e653c01cddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the value of the time the object should be born. <br /></td></tr>
@@ -186,12 +234,20 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeOfBirth</b></t
 float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td></tr>
 <tr class="memdesc:ad9c6a7e279775f09e37f467f10e1e0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the value of the time the object has been 'physically' alive. <br /></td></tr>
 <tr class="separator:ad9c6a7e279775f09e37f467f10e1e0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822cb7f0a2e535864cb459dadf8c861e"><td class="memItemLeft" align="right" valign="top"><a id="a822cb7f0a2e535864cb459dadf8c861e" name="a822cb7f0a2e535864cb459dadf8c861e"></a>
+std::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>p_birthSound</b></td></tr>
+<tr class="memdesc:a822cb7f0a2e535864cb459dadf8c861e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> reference for the birth sound, if it is allocated. <br /></td></tr>
+<tr class="separator:a822cb7f0a2e535864cb459dadf8c861e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6add39836fa89c7160145f0e47baa8"><td class="memItemLeft" align="right" valign="top"><a id="a4a6add39836fa89c7160145f0e47baa8" name="a4a6add39836fa89c7160145f0e47baa8"></a>
+std::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>p_deathSound</b></td></tr>
+<tr class="memdesc:a4a6add39836fa89c7160145f0e47baa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> reference for the death sound, if it is allocated. <br /></td></tr>
+<tr class="separator:a4a6add39836fa89c7160145f0e47baa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_particle_interface.html" title="ParticleInterface class hadles common behaviour of particles and their properties,...">ParticleInterface</a> class hadles common behaviour of particles and their properties, as well as forcing the implementation of common behaviours of such. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4c8920d5fa88d0dfe46b0ed481b0db69" name="a4c8920d5fa88d0dfe46b0ed481b0db69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c8920d5fa88d0dfe46b0ed481b0db69">&#9670;&nbsp;</a></span>birth()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8920d5fa88d0dfe46b0ed481b0db69">&#9670;&nbsp;</a></span>birth() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,12 +271,41 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 
 <p>Method which forces child classes to implement a birth behaviour. </p>
 
-<p>Implemented in <a class="el" href="class_poly_particle_shape.html#aaf801acb918cccef6dad9211d2ad676d">PolyParticleShape</a>.</p>
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#aaf801acb918cccef6dad9211d2ad676d">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#aaf801acb918cccef6dad9211d2ad676d">PolyParticleShape</a>.</p>
+
+</div>
+</div>
+<a id="a4c8920d5fa88d0dfe46b0ed481b0db69" name="a4c8920d5fa88d0dfe46b0ed481b0db69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8920d5fa88d0dfe46b0ed481b0db69">&#9670;&nbsp;</a></span>birth() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleInterface::birth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which forces child classes to implement a birth behaviour. </p>
+
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#aaf801acb918cccef6dad9211d2ad676d">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#aaf801acb918cccef6dad9211d2ad676d">PolyParticleShape</a>.</p>
 
 </div>
 </div>
 <a id="aafc0d7e7e1c02243d6c7904c057c37a3" name="aafc0d7e7e1c02243d6c7904c057c37a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafc0d7e7e1c02243d6c7904c057c37a3">&#9670;&nbsp;</a></span>death()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc0d7e7e1c02243d6c7904c057c37a3">&#9670;&nbsp;</a></span>death() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,12 +329,67 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 
 <p>Method which forces child classes to implement a death behaviour. </p>
 
-<p>Implemented in <a class="el" href="class_poly_particle_shape.html#ad8ea54c42570acbb832f5c8201f3c2a1">PolyParticleShape</a>.</p>
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#ad8ea54c42570acbb832f5c8201f3c2a1">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#ad8ea54c42570acbb832f5c8201f3c2a1">PolyParticleShape</a>.</p>
+
+</div>
+</div>
+<a id="aafc0d7e7e1c02243d6c7904c057c37a3" name="aafc0d7e7e1c02243d6c7904c057c37a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc0d7e7e1c02243d6c7904c057c37a3">&#9670;&nbsp;</a></span>death() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleInterface::death </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which forces child classes to implement a death behaviour. </p>
+
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#ad8ea54c42570acbb832f5c8201f3c2a1">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#ad8ea54c42570acbb832f5c8201f3c2a1">PolyParticleShape</a>.</p>
 
 </div>
 </div>
 <a id="a011130f2e708b5bd8a0069467e67575e" name="a011130f2e708b5bd8a0069467e67575e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a011130f2e708b5bd8a0069467e67575e">&#9670;&nbsp;</a></span>enableBirthSound()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a011130f2e708b5bd8a0069467e67575e">&#9670;&nbsp;</a></span>enableBirthSound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleInterface::enableBirthSound </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which sets if the birth should be played. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>The value to enable the playing of the sound. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a011130f2e708b5bd8a0069467e67575e" name="a011130f2e708b5bd8a0069467e67575e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011130f2e708b5bd8a0069467e67575e">&#9670;&nbsp;</a></span>enableBirthSound() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +415,33 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 </div>
 </div>
 <a id="a6c9c9b83c9778632619d62896910fc66" name="a6c9c9b83c9778632619d62896910fc66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c9c9b83c9778632619d62896910fc66">&#9670;&nbsp;</a></span>enableDeathSound()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9c9b83c9778632619d62896910fc66">&#9670;&nbsp;</a></span>enableDeathSound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleInterface::enableDeathSound </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which sets if the death should be played. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>The value to enable the playing of the sound. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c9c9b83c9778632619d62896910fc66" name="a6c9c9b83c9778632619d62896910fc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9c9b83c9778632619d62896910fc66">&#9670;&nbsp;</a></span>enableDeathSound() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +467,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 </div>
 </div>
 <a id="a952cfb112cae8039fd5857977caff0c0" name="a952cfb112cae8039fd5857977caff0c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a952cfb112cae8039fd5857977caff0c0">&#9670;&nbsp;</a></span>getState()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a952cfb112cae8039fd5857977caff0c0">&#9670;&nbsp;</a></span>getState() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,8 +486,48 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 
 </div>
 </div>
+<a id="a37b0ba07043cf4e3bd1daf3c6fde3908" name="a37b0ba07043cf4e3bd1daf3c6fde3908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b0ba07043cf4e3bd1daf3c6fde3908">&#9670;&nbsp;</a></span>getState() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_particle_interface_1_1_state.html">State</a> ParticleInterface::getState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which gets the current internal state of the particle. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current internal state of the particle. </dd></dl>
+
+</div>
+</div>
 <a id="abc241095881e484d6b81c9ba35cc70c2" name="abc241095881e484d6b81c9ba35cc70c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc241095881e484d6b81c9ba35cc70c2">&#9670;&nbsp;</a></span>isAlive()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abc241095881e484d6b81c9ba35cc70c2">&#9670;&nbsp;</a></span>isAlive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleInterface::isAlive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which checks if the current particle is alive or dead. </p>
+<dl class="section return"><dt>Returns</dt><dd>The value of true if the current parrticle is alive . </dd></dl>
+
+</div>
+</div>
+<a id="abc241095881e484d6b81c9ba35cc70c2" name="abc241095881e484d6b81c9ba35cc70c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc241095881e484d6b81c9ba35cc70c2">&#9670;&nbsp;</a></span>isAlive() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +547,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 </div>
 </div>
 <a id="a6675508ad37eff7ea8950b876da389f4" name="a6675508ad37eff7ea8950b876da389f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6675508ad37eff7ea8950b876da389f4">&#9670;&nbsp;</a></span>resetToBirthState()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6675508ad37eff7ea8950b876da389f4">&#9670;&nbsp;</a></span>resetToBirthState() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,12 +571,78 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 
 <p>Method which forces child classes to implement a resetToBirthState behaviour. </p>
 
-<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a45aedbd9ef45ccd54e31999e7c36495c">PolyParticleShape</a>.</p>
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a45aedbd9ef45ccd54e31999e7c36495c">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#a45aedbd9ef45ccd54e31999e7c36495c">PolyParticleShape</a>.</p>
+
+</div>
+</div>
+<a id="a6675508ad37eff7ea8950b876da389f4" name="a6675508ad37eff7ea8950b876da389f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6675508ad37eff7ea8950b876da389f4">&#9670;&nbsp;</a></span>resetToBirthState() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleInterface::resetToBirthState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which forces child classes to implement a resetToBirthState behaviour. </p>
+
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a45aedbd9ef45ccd54e31999e7c36495c">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#a45aedbd9ef45ccd54e31999e7c36495c">PolyParticleShape</a>.</p>
 
 </div>
 </div>
 <a id="afb8aebe1ba5a951eaeb7dffaf8c46e99" name="afb8aebe1ba5a951eaeb7dffaf8c46e99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb8aebe1ba5a951eaeb7dffaf8c46e99">&#9670;&nbsp;</a></span>setBirthSound()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8aebe1ba5a951eaeb7dffaf8c46e99">&#9670;&nbsp;</a></span>setBirthSound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleInterface::setBirthSound </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>activate</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which sets and loads the birth behaviour sound. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path of the sound to be played. </td></tr>
+    <tr><td class="paramname">activate</td><td>If the sound should start active. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb8aebe1ba5a951eaeb7dffaf8c46e99" name="afb8aebe1ba5a951eaeb7dffaf8c46e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8aebe1ba5a951eaeb7dffaf8c46e99">&#9670;&nbsp;</a></span>setBirthSound() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +679,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 </div>
 </div>
 <a id="adab5deb6a3b11d5e264b9fe1f071acfa" name="adab5deb6a3b11d5e264b9fe1f071acfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adab5deb6a3b11d5e264b9fe1f071acfa">&#9670;&nbsp;</a></span>setBirthState()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adab5deb6a3b11d5e264b9fe1f071acfa">&#9670;&nbsp;</a></span>setBirthState() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,12 +721,59 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a88ff26cd90f8754149dca980d48fbfe1">PolyParticleShape</a>.</p>
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a88ff26cd90f8754149dca980d48fbfe1">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#a88ff26cd90f8754149dca980d48fbfe1">PolyParticleShape</a>.</p>
+
+</div>
+</div>
+<a id="adab5deb6a3b11d5e264b9fe1f071acfa" name="adab5deb6a3b11d5e264b9fe1f071acfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adab5deb6a3b11d5e264b9fe1f071acfa">&#9670;&nbsp;</a></span>setBirthState() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleInterface::setBirthState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_particle_interface_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeOfBirth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which forces child classes to set the internal birth state of the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The state to be born with. </td></tr>
+    <tr><td class="paramname">timeOfBirth</td><td>The time the objects is suposed to be born. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a88ff26cd90f8754149dca980d48fbfe1">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#a88ff26cd90f8754149dca980d48fbfe1">PolyParticleShape</a>.</p>
 
 </div>
 </div>
 <a id="ac49ff841bb9558b5c409322110cdeeae" name="ac49ff841bb9558b5c409322110cdeeae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac49ff841bb9558b5c409322110cdeeae">&#9670;&nbsp;</a></span>setDeathCondition()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49ff841bb9558b5c409322110cdeeae">&#9670;&nbsp;</a></span>setDeathCondition() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,8 +818,91 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 
 </div>
 </div>
+<a id="a4069594865272f569aa54150591d4d1f" name="a4069594865272f569aa54150591d4d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4069594865272f569aa54150591d4d1f">&#9670;&nbsp;</a></span>setDeathCondition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleInterface::setDeathCondition </td>
+          <td>(</td>
+          <td class="paramtype">bool(*)(std::map&lt; std::string, void * &gt;)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, void * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>argsMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which sets the death vericication callback, in is called on updatePhysics. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>A function pointer. </td></tr>
+    <tr><td class="paramname">argsMap</td><td>The function's arguments map. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_particle_interface.html#af7e4ca051d0e50b515f5560c34965685" title="Method which forces child classes to update the internal state of the object based on deltaTime.">updatePhysics()</a> </dd></dl>
+
+</div>
+</div>
 <a id="a5899d0e496a295f8757b65c2488a5341" name="a5899d0e496a295f8757b65c2488a5341"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5899d0e496a295f8757b65c2488a5341">&#9670;&nbsp;</a></span>setDeathSound()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5899d0e496a295f8757b65c2488a5341">&#9670;&nbsp;</a></span>setDeathSound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleInterface::setDeathSound </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>activate</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which sets and loads the death behaviour sound. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path of the sound to be played. </td></tr>
+    <tr><td class="paramname">activate</td><td>If the sound should start active. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5899d0e496a295f8757b65c2488a5341" name="a5899d0e496a295f8757b65c2488a5341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5899d0e496a295f8757b65c2488a5341">&#9670;&nbsp;</a></span>setDeathSound() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +939,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 </div>
 </div>
 <a id="a23701805218c0874732149de1a26d0d4" name="a23701805218c0874732149de1a26d0d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23701805218c0874732149de1a26d0d4">&#9670;&nbsp;</a></span>setResetState()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23701805218c0874732149de1a26d0d4">&#9670;&nbsp;</a></span>setResetState() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,12 +970,48 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_poly_particle_shape.html#ae889e9f92947de26baa34ec2a289e707">PolyParticleShape</a>.</p>
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#ae889e9f92947de26baa34ec2a289e707">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#ae889e9f92947de26baa34ec2a289e707">PolyParticleShape</a>.</p>
+
+</div>
+</div>
+<a id="a23701805218c0874732149de1a26d0d4" name="a23701805218c0874732149de1a26d0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23701805218c0874732149de1a26d0d4">&#9670;&nbsp;</a></span>setResetState() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleInterface::setResetState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_particle_interface_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which forces child classes to set the internal reset state of the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The state to be reset with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#ae889e9f92947de26baa34ec2a289e707">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#ae889e9f92947de26baa34ec2a289e707">PolyParticleShape</a>.</p>
 
 </div>
 </div>
 <a id="af7e4ca051d0e50b515f5560c34965685" name="af7e4ca051d0e50b515f5560c34965685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7e4ca051d0e50b515f5560c34965685">&#9670;&nbsp;</a></span>updatePhysics()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e4ca051d0e50b515f5560c34965685">&#9670;&nbsp;</a></span>updatePhysics() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -604,13 +1042,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a85c1276b48159f3e2cb9d2ad1f87c932">PolyParticleShape</a>.</p>
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a85c1276b48159f3e2cb9d2ad1f87c932">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#a85c1276b48159f3e2cb9d2ad1f87c932">PolyParticleShape</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="abab4a17ba6835a95dc055447fa4e8e10" name="abab4a17ba6835a95dc055447fa4e8e10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abab4a17ba6835a95dc055447fa4e8e10">&#9670;&nbsp;</a></span>p_deathCondition</h2>
+<a id="af7e4ca051d0e50b515f5560c34965685" name="af7e4ca051d0e50b515f5560c34965685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e4ca051d0e50b515f5560c34965685">&#9670;&nbsp;</a></span>updatePhysics() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +1056,44 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool(* ParticleInterface::p_deathCondition) (std::map&lt; std::string, void * &gt;)</td>
+          <td class="memname">virtual void ParticleInterface::updatePhysics </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>deltaTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which forces child classes to update the internal state of the object based on deltaTime. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>The time interval to update the differential equations. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_poly_particle_shape.html#a85c1276b48159f3e2cb9d2ad1f87c932">PolyParticleShape</a>, and <a class="el" href="class_poly_particle_shape.html#a85c1276b48159f3e2cb9d2ad1f87c932">PolyParticleShape</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad7243fc8c8de6c8cbcc9882e4bfb4df4" name="ad7243fc8c8de6c8cbcc9882e4bfb4df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7243fc8c8de6c8cbcc9882e4bfb4df4">&#9670;&nbsp;</a></span>p_deathCondition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool(* ParticleInterface::p_deathCondition)(std::map&lt; std::string, void * &gt;)</td>
         </tr>
       </table>
   </td>
@@ -634,8 +1108,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 
 </div>
 </div>
-<a id="a919b971782b8edc1293fe8a9014a68c5" name="a919b971782b8edc1293fe8a9014a68c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a919b971782b8edc1293fe8a9014a68c5">&#9670;&nbsp;</a></span>p_deathConditionArgsMap</h2>
+<a id="a385a9eb22d0bd47e388536fe2b19950f" name="a385a9eb22d0bd47e388536fe2b19950f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385a9eb22d0bd47e388536fe2b19950f">&#9670;&nbsp;</a></span>p_deathConditionArgsMap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -644,7 +1118,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string, void*&gt; ParticleInterface::p_deathConditionArgsMap</td>
+          <td class="memname">std::map&lt; std::string, void * &gt; ParticleInterface::p_deathConditionArgsMap</td>
         </tr>
       </table>
   </td>
@@ -660,8 +1134,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>p_timeAlive</b></td>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/<a class="el" href="_particle_interface_8hpp_source.html">ParticleInterface.hpp</a></li>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/ParticleInterface.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/include/<a class="el" href="_linux_2include_2_particle_interface_8hpp_source.html">ParticleInterface.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/<a class="el" href="_windows_2_a_casino_game_2_my_objects_2_particle_interface_8hpp_source.html">ParticleInterface.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/src/ParticleInterface.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/ParticleInterface.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

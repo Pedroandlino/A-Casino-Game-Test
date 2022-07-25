@@ -75,7 +75,7 @@ $(function() {
 <p><a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a> class, singleton, manages all <a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> objects to be run by the application.  
  <a href="class_window_manager.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_window_manager_8hpp_source.html">WindowManager.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_linux_2include_2_window_manager_8hpp_source.html">WindowManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -85,9 +85,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a983c9a6d3768376bd7b5e3f283ff09b5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a983c9a6d3768376bd7b5e3f283ff09b5">createWindow</a> (const std::string &amp;title, const sf::Vector2u &amp;dims, int fps=60, const std::string &amp;iconPath=&quot;&quot;)</td></tr>
 <tr class="memdesc:a983c9a6d3768376bd7b5e3f283ff09b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which creates/allocates a new window object, to be owned by <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a>.  <a href="class_window_manager.html#a983c9a6d3768376bd7b5e3f283ff09b5">More...</a><br /></td></tr>
 <tr class="separator:a983c9a6d3768376bd7b5e3f283ff09b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a54a864ae071db0d4d861d98fcc68f"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#ad8a54a864ae071db0d4d861d98fcc68f">getWindowModel</a> (const std::string &amp;title)</td></tr>
+<tr class="memitem:ad8a54a864ae071db0d4d861d98fcc68f"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#ad8a54a864ae071db0d4d861d98fcc68f">getWindowModel</a> (const std::string &amp;title)</td></tr>
 <tr class="memdesc:ad8a54a864ae071db0d4d861d98fcc68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which allows access to the WindowModels owned by <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a>.  <a href="class_window_manager.html#ad8a54a864ae071db0d4d861d98fcc68f">More...</a><br /></td></tr>
 <tr class="separator:ad8a54a864ae071db0d4d861d98fcc68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad250f51ee03cb08737a7dd3bc975679d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_window_manager.html">WindowManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#ad250f51ee03cb08737a7dd3bc975679d">getInstance</a> ()</td></tr>
+<tr class="memdesc:ad250f51ee03cb08737a7dd3bc975679d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which gets the instance of <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a> singleton.  <a href="class_window_manager.html#ad250f51ee03cb08737a7dd3bc975679d">More...</a><br /></td></tr>
+<tr class="separator:ad250f51ee03cb08737a7dd3bc975679d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1463f2200941d446dfc3122a5f6b7944"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a1463f2200941d446dfc3122a5f6b7944">createWindow</a> (const std::string &amp;title, const sf::Vector2u &amp;dims, int fps=60, const std::string &amp;iconPath=&quot;&quot;)</td></tr>
+<tr class="memdesc:a1463f2200941d446dfc3122a5f6b7944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which creates/allocates a new window object, to be owned by <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a>.  <a href="class_window_manager.html#a1463f2200941d446dfc3122a5f6b7944">More...</a><br /></td></tr>
+<tr class="separator:a1463f2200941d446dfc3122a5f6b7944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027bd9c72ebb2ae514b796774b36c7a7"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a027bd9c72ebb2ae514b796774b36c7a7">getWindowModel</a> (const std::string &amp;title)</td></tr>
+<tr class="memdesc:a027bd9c72ebb2ae514b796774b36c7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which allows access to the WindowModels owned by <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a>.  <a href="class_window_manager.html#a027bd9c72ebb2ae514b796774b36c7a7">More...</a><br /></td></tr>
+<tr class="separator:a027bd9c72ebb2ae514b796774b36c7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -99,9 +108,21 @@ Private Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~WindowManager</b> ()=default</td></tr>
 <tr class="memdesc:adafaca86aab3bdd725da30fd0705fa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
 <tr class="separator:adafaca86aab3bdd725da30fd0705fa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a283b34c19aaa20296befaabad4d29b"><td class="memItemLeft" align="right" valign="top"><a id="a3a283b34c19aaa20296befaabad4d29b" name="a3a283b34c19aaa20296befaabad4d29b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WindowManager</b> ()</td></tr>
+<tr class="memdesc:a3a283b34c19aaa20296befaabad4d29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a3a283b34c19aaa20296befaabad4d29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafaca86aab3bdd725da30fd0705fa3d"><td class="memItemLeft" align="right" valign="top"><a id="adafaca86aab3bdd725da30fd0705fa3d" name="adafaca86aab3bdd725da30fd0705fa3d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~WindowManager</b> ()=default</td></tr>
+<tr class="memdesc:adafaca86aab3bdd725da30fd0705fa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:adafaca86aab3bdd725da30fd0705fa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a8b25b4d5949141193b8a17a86c37c426"><td class="memItemLeft" align="right" valign="top"><a id="a8b25b4d5949141193b8a17a86c37c426" name="a8b25b4d5949141193b8a17a86c37c426"></a>
+std::map&lt; std::string, boost::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_windowModelMap</b></td></tr>
+<tr class="memdesc:a8b25b4d5949141193b8a17a86c37c426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> references, one for each allocated window. <br /></td></tr>
+<tr class="separator:a8b25b4d5949141193b8a17a86c37c426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf96c5170422c45c9ba0500a08cd447"><td class="memItemLeft" align="right" valign="top"><a id="aecf96c5170422c45c9ba0500a08cd447" name="aecf96c5170422c45c9ba0500a08cd447"></a>
 std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_windowModelMap</b></td></tr>
 <tr class="memdesc:aecf96c5170422c45c9ba0500a08cd447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> references, one for each allocated window. <br /></td></tr>
@@ -111,7 +132,7 @@ std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_window_m
 <div class="textblock"><p ><a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a> class, singleton, manages all <a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> objects to be run by the application. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a983c9a6d3768376bd7b5e3f283ff09b5" name="a983c9a6d3768376bd7b5e3f283ff09b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a983c9a6d3768376bd7b5e3f283ff09b5">&#9670;&nbsp;</a></span>createWindow()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a983c9a6d3768376bd7b5e3f283ff09b5">&#9670;&nbsp;</a></span>createWindow() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,8 +191,68 @@ std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_window_m
 
 </div>
 </div>
+<a id="a1463f2200941d446dfc3122a5f6b7944" name="a1463f2200941d446dfc3122a5f6b7944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1463f2200941d446dfc3122a5f6b7944">&#9670;&nbsp;</a></span>createWindow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool WindowManager::createWindow </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::Vector2u &amp;&#160;</td>
+          <td class="paramname"><em>dims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fps</em> = <code>60</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>iconPath</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which creates/allocates a new window object, to be owned by <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>The title of the window (unique). </td></tr>
+    <tr><td class="paramname">dims</td><td>The dimensions of the window. </td></tr>
+    <tr><td class="paramname">fps</td><td>The frames per second of refresh rate. </td></tr>
+    <tr><td class="paramname">iconPath</td><td>The window icon path. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value true if a window was created, false if the window name already exists. </dd></dl>
+
+</div>
+</div>
 <a id="a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" name="a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb">&#9670;&nbsp;</a></span>getInstance()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb">&#9670;&nbsp;</a></span>getInstance() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,8 +279,36 @@ std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_window_m
 
 </div>
 </div>
+<a id="ad250f51ee03cb08737a7dd3bc975679d" name="ad250f51ee03cb08737a7dd3bc975679d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad250f51ee03cb08737a7dd3bc975679d">&#9670;&nbsp;</a></span>getInstance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_window_manager.html">WindowManager</a> &amp; WindowManager::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which gets the instance of <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a> singleton. </p>
+<dl class="section return"><dt>Returns</dt><dd>The instance of the <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a> singleton. </dd></dl>
+
+</div>
+</div>
 <a id="ad8a54a864ae071db0d4d861d98fcc68f" name="ad8a54a864ae071db0d4d861d98fcc68f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a54a864ae071db0d4d861d98fcc68f">&#9670;&nbsp;</a></span>getWindowModel()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a54a864ae071db0d4d861d98fcc68f">&#9670;&nbsp;</a></span>getWindowModel() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,9 +342,46 @@ std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_window_m
 
 </div>
 </div>
+<a id="a027bd9c72ebb2ae514b796774b36c7a7" name="a027bd9c72ebb2ae514b796774b36c7a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027bd9c72ebb2ae514b796774b36c7a7">&#9670;&nbsp;</a></span>getWindowModel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt; WindowManager::getWindowModel </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which allows access to the WindowModels owned by <a class="el" href="class_window_manager.html" title="WindowManager class, singleton, manages all WindowModel objects to be run by the application.">WindowManager</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>The title of the window (unique). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_window_model.html" title="WindowModel class inherits RenderWindow so that more functionalities and interfaces can be added to e...">WindowModel</a> requested by title. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/<a class="el" href="_window_manager_8hpp_source.html">WindowManager.hpp</a></li>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/WindowManager.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/include/<a class="el" href="_linux_2include_2_window_manager_8hpp_source.html">WindowManager.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/<a class="el" href="_windows_2_a_casino_game_2_my_objects_2_window_manager_8hpp_source.html">WindowManager.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/src/WindowManager.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/WindowManager.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

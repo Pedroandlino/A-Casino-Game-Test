@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['generatepolygon_0',['generatePolygon',['../class_poly_particle_shape.html#a24d93ab8e90873d8cd840377c00a10cd',1,'PolyParticleShape']]],
-  ['generateseed_1',['generateSeed',['../class_math_module.html#af0acdbd9b6448fb6bf194b84f6f08657',1,'MathModule']]],
-  ['getcurrentwindow_2',['getCurrentWindow',['../class_casino_game.html#a54c563dcad0d27b10a5df29ead43af2b',1,'CasinoGame']]],
-  ['getinstance_3',['getInstance',['../class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb',1,'WindowManager']]],
-  ['getrandom_4',['getRandom',['../class_math_module.html#a7997626276940a7665261acfc46026c0',1,'MathModule']]],
-  ['getstate_5',['getState',['../class_button_shape.html#a61b9fbd5ac593be66e24ee2427c89405',1,'ButtonShape::getState()'],['../class_particle_interface.html#a952cfb112cae8039fd5857977caff0c0',1,'ParticleInterface::getState()']]],
-  ['getwindowmodel_6',['getWindowModel',['../class_window_manager.html#ad8a54a864ae071db0d4d861d98fcc68f',1,'WindowManager']]]
+  ['generatepolygon_0',['generatePolygon',['../class_poly_particle_shape.html#a24d93ab8e90873d8cd840377c00a10cd',1,'PolyParticleShape::generatePolygon(int nPoints, float radius)'],['../class_poly_particle_shape.html#a24d93ab8e90873d8cd840377c00a10cd',1,'PolyParticleShape::generatePolygon(int nPoints, float radius)']]],
+  ['generateseed_1',['generateSeed',['../class_math_module.html#af0acdbd9b6448fb6bf194b84f6f08657',1,'MathModule::generateSeed()'],['../class_math_module.html#a9693c85eaf619e1bdf815739b61d0fc9',1,'MathModule::generateSeed()']]],
+  ['getcurrentwindow_2',['getCurrentWindow',['../class_casino_game.html#a54c563dcad0d27b10a5df29ead43af2b',1,'CasinoGame::getCurrentWindow()'],['../class_casino_game.html#a54c563dcad0d27b10a5df29ead43af2b',1,'CasinoGame::getCurrentWindow()']]],
+  ['getinstance_3',['getInstance',['../class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb',1,'WindowManager::getInstance()'],['../class_window_manager.html#ad250f51ee03cb08737a7dd3bc975679d',1,'WindowManager::getInstance()']]],
+  ['getrandom_4',['getRandom',['../class_math_module.html#a7997626276940a7665261acfc46026c0',1,'MathModule::getRandom(float lowestInterval, float highestInterval)'],['../class_math_module.html#acde7184365be7a36ee5fd19867ffc154',1,'MathModule::getRandom(float lowestInterval, float highestInterval)']]],
+  ['getstate_5',['getState',['../class_button_shape.html#a61b9fbd5ac593be66e24ee2427c89405',1,'ButtonShape::getState()'],['../class_particle_interface.html#a952cfb112cae8039fd5857977caff0c0',1,'ParticleInterface::getState()'],['../class_button_shape.html#a3c1e2ebe928ccff50821ccecab6851ba',1,'ButtonShape::getState()'],['../class_particle_interface.html#a37b0ba07043cf4e3bd1daf3c6fde3908',1,'ParticleInterface::getState()']]],
+  ['getwindowmodel_6',['getWindowModel',['../class_window_manager.html#ad8a54a864ae071db0d4d861d98fcc68f',1,'WindowManager::getWindowModel(const std::string &amp;title)'],['../class_window_manager.html#a027bd9c72ebb2ae514b796774b36c7a7',1,'WindowManager::getWindowModel(const std::string &amp;title)']]]
 ];

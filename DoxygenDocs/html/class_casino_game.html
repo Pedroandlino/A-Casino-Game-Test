@@ -77,7 +77,7 @@ $(function() {
 <p><a class="el" href="class_casino_game.html" title="CasinoGame class used to run and handle all the variables necessary to run a casino game object,...">CasinoGame</a> class used to run and handle all the variables necessary to run a casino game object, from initialization to communication between objects on window evets.  
  <a href="class_casino_game.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_casino_game_8hpp_source.html">CasinoGame.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_linux_2include_2_casino_game_8hpp_source.html">CasinoGame.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -87,6 +87,30 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a63c520acb9037d59463a1f2e925f095c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_casino_game.html#a63c520acb9037d59463a1f2e925f095c">CasinoGame</a> (boost::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt; windowModel)</td></tr>
+<tr class="memdesc:a63c520acb9037d59463a1f2e925f095c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_casino_game.html#a63c520acb9037d59463a1f2e925f095c">More...</a><br /></td></tr>
+<tr class="separator:a63c520acb9037d59463a1f2e925f095c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd9949fc5f8319b3ebcbe0911b1da77"><td class="memItemLeft" align="right" valign="top"><a id="abdd9949fc5f8319b3ebcbe0911b1da77" name="abdd9949fc5f8319b3ebcbe0911b1da77"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~CasinoGame</b> ()=default</td></tr>
+<tr class="memdesc:abdd9949fc5f8319b3ebcbe0911b1da77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:abdd9949fc5f8319b3ebcbe0911b1da77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac774d62c44df6f3f3db46062f49cf69a"><td class="memItemLeft" align="right" valign="top"><a id="ac774d62c44df6f3f3db46062f49cf69a" name="ac774d62c44df6f3f3db46062f49cf69a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="memdesc:ac774d62c44df6f3f3db46062f49cf69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which runs all the necessary initialization functions to instatiate the game. <br /></td></tr>
+<tr class="separator:ac774d62c44df6f3f3db46062f49cf69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad37e36268a0a0c9239908e240df713b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_casino_game.html#aad37e36268a0a0c9239908e240df713b">switchToWindow</a> (boost::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt; windowModel)</td></tr>
+<tr class="memdesc:aad37e36268a0a0c9239908e240df713b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which switches the render window of the game and re-instatiates it.  <a href="class_casino_game.html#aad37e36268a0a0c9239908e240df713b">More...</a><br /></td></tr>
+<tr class="separator:aad37e36268a0a0c9239908e240df713b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac740af505c584c58d3f45da4c4d9e8ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_casino_game.html#ac740af505c584c58d3f45da4c4d9e8ee">updateButtonsOnWindowEvent</a> (const sf::Event &amp;evnt)</td></tr>
+<tr class="memdesc:ac740af505c584c58d3f45da4c4d9e8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which, when called, updates the buttons according to an event.  <a href="class_casino_game.html#ac740af505c584c58d3f45da4c4d9e8ee">More...</a><br /></td></tr>
+<tr class="separator:ac740af505c584c58d3f45da4c4d9e8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df497702305f99de02d0c30036af63a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_casino_game.html#a4df497702305f99de02d0c30036af63a">updatePhysics</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a4df497702305f99de02d0c30036af63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which updates the physics of the internal particles on \pm_particleMap based on deltaTime.  <a href="class_casino_game.html#a4df497702305f99de02d0c30036af63a">More...</a><br /></td></tr>
+<tr class="separator:a4df497702305f99de02d0c30036af63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c563dcad0d27b10a5df29ead43af2b"><td class="memItemLeft" align="right" valign="top"><a id="a54c563dcad0d27b10a5df29ead43af2b" name="a54c563dcad0d27b10a5df29ead43af2b"></a>
+<a class="el" href="class_window_model.html">WindowModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentWindow</b> ()</td></tr>
+<tr class="memdesc:a54c563dcad0d27b10a5df29ead43af2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which gives access to the window running the game (not the owner). <br /></td></tr>
+<tr class="separator:a54c563dcad0d27b10a5df29ead43af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d6252e6391ad38d9a98861438f501a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_casino_game.html#a57d6252e6391ad38d9a98861438f501a">CasinoGame</a> (std::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt; windowModel)</td></tr>
 <tr class="memdesc:a57d6252e6391ad38d9a98861438f501a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_casino_game.html#a57d6252e6391ad38d9a98861438f501a">More...</a><br /></td></tr>
 <tr class="separator:a57d6252e6391ad38d9a98861438f501a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +178,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>connectButtons</b> ()
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addShapesToWindow</b> ()</td></tr>
 <tr class="memdesc:a6b4553b0edc0888f90be251edf7fee70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which adds all the shapes initialized to be rendered on the window, by layer order. <br /></td></tr>
 <tr class="separator:a6b4553b0edc0888f90be251edf7fee70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae791d689456776419a6a0d17d3cb92"><td class="memItemLeft" align="right" valign="top"><a id="a0ae791d689456776419a6a0d17d3cb92" name="a0ae791d689456776419a6a0d17d3cb92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadState</b> ()</td></tr>
+<tr class="memdesc:a0ae791d689456776419a6a0d17d3cb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which loads a game state. <br /></td></tr>
+<tr class="separator:a0ae791d689456776419a6a0d17d3cb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d2b2b825ce73fcbdcda4e42c94fa6d"><td class="memItemLeft" align="right" valign="top"><a id="a84d2b2b825ce73fcbdcda4e42c94fa6d" name="a84d2b2b825ce73fcbdcda4e42c94fa6d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initMusic</b> ()</td></tr>
+<tr class="memdesc:a84d2b2b825ce73fcbdcda4e42c94fa6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which initializes the game environment music. <br /></td></tr>
+<tr class="separator:a84d2b2b825ce73fcbdcda4e42c94fa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5934a398aa27b0d51ba52c3028f24eef"><td class="memItemLeft" align="right" valign="top"><a id="a5934a398aa27b0d51ba52c3028f24eef" name="a5934a398aa27b0d51ba52c3028f24eef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initBackground</b> ()</td></tr>
+<tr class="memdesc:a5934a398aa27b0d51ba52c3028f24eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which initializes the game background textures. <br /></td></tr>
+<tr class="separator:a5934a398aa27b0d51ba52c3028f24eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9566f8cb33741be5793078106af15ba"><td class="memItemLeft" align="right" valign="top"><a id="ab9566f8cb33741be5793078106af15ba" name="ab9566f8cb33741be5793078106af15ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initStaticTexts</b> ()</td></tr>
+<tr class="memdesc:ab9566f8cb33741be5793078106af15ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which initializes the static texts objects. <br /></td></tr>
+<tr class="separator:ab9566f8cb33741be5793078106af15ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217e0026235612ace7d0dc3e9195e3b4"><td class="memItemLeft" align="right" valign="top"><a id="a217e0026235612ace7d0dc3e9195e3b4" name="a217e0026235612ace7d0dc3e9195e3b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initDynamicTexts</b> ()</td></tr>
+<tr class="memdesc:a217e0026235612ace7d0dc3e9195e3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which initializes the dynamic texts objects. <br /></td></tr>
+<tr class="separator:a217e0026235612ace7d0dc3e9195e3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626f0d185ee890daa5f78067a0bac512"><td class="memItemLeft" align="right" valign="top"><a id="a626f0d185ee890daa5f78067a0bac512" name="a626f0d185ee890daa5f78067a0bac512"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initParticleObjects</b> ()</td></tr>
+<tr class="memdesc:a626f0d185ee890daa5f78067a0bac512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which initializes the particle objects. <br /></td></tr>
+<tr class="separator:a626f0d185ee890daa5f78067a0bac512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc61519fe12ebe98cb6b3655a936f074"><td class="memItemLeft" align="right" valign="top"><a id="adc61519fe12ebe98cb6b3655a936f074" name="adc61519fe12ebe98cb6b3655a936f074"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initButtons</b> ()</td></tr>
+<tr class="memdesc:adc61519fe12ebe98cb6b3655a936f074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which initializes the button objects. <br /></td></tr>
+<tr class="separator:adc61519fe12ebe98cb6b3655a936f074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ed185964f674f33cce381d8f1cfa25"><td class="memItemLeft" align="right" valign="top"><a id="aa8ed185964f674f33cce381d8f1cfa25" name="aa8ed185964f674f33cce381d8f1cfa25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connectParticleObjects</b> ()</td></tr>
+<tr class="memdesc:aa8ed185964f674f33cce381d8f1cfa25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which connects the particle objects with their running callbacks and arguments. <br /></td></tr>
+<tr class="separator:aa8ed185964f674f33cce381d8f1cfa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8964dc4478f89d5fd448dd3ea3237cfa"><td class="memItemLeft" align="right" valign="top"><a id="a8964dc4478f89d5fd448dd3ea3237cfa" name="a8964dc4478f89d5fd448dd3ea3237cfa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connectButtons</b> ()</td></tr>
+<tr class="memdesc:a8964dc4478f89d5fd448dd3ea3237cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which connects the button objects with their running callbacks and arguments. <br /></td></tr>
+<tr class="separator:a8964dc4478f89d5fd448dd3ea3237cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4553b0edc0888f90be251edf7fee70"><td class="memItemLeft" align="right" valign="top"><a id="a6b4553b0edc0888f90be251edf7fee70" name="a6b4553b0edc0888f90be251edf7fee70"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addShapesToWindow</b> ()</td></tr>
+<tr class="memdesc:a6b4553b0edc0888f90be251edf7fee70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which adds all the shapes initialized to be rendered on the window, by layer order. <br /></td></tr>
+<tr class="separator:a6b4553b0edc0888f90be251edf7fee70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -173,6 +237,22 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreditsOutBu
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>particleDeathCondition</b> (std::map&lt; std::string, void * &gt; argsMap)</td></tr>
 <tr class="memdesc:a173e00f9b2bb3606469ecee3c4fe7094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method, to be used as a callback function pointer, which handles a particle death verification event. <br /></td></tr>
 <tr class="separator:a173e00f9b2bb3606469ecee3c4fe7094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c1d52fda9c18beeea57da2dc7893c9"><td class="memItemLeft" align="right" valign="top"><a id="a12c1d52fda9c18beeea57da2dc7893c9" name="a12c1d52fda9c18beeea57da2dc7893c9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>onStartButton</b> (std::map&lt; std::string, void * &gt; argsMap)</td></tr>
+<tr class="memdesc:a12c1d52fda9c18beeea57da2dc7893c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method, to be used as a callback function pointer, which handles a start button click event. <br /></td></tr>
+<tr class="separator:a12c1d52fda9c18beeea57da2dc7893c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781d9ca55b68f80e1156815778d92f64"><td class="memItemLeft" align="right" valign="top"><a id="a781d9ca55b68f80e1156815778d92f64" name="a781d9ca55b68f80e1156815778d92f64"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreditsInButton</b> (std::map&lt; std::string, void * &gt; argsMap)</td></tr>
+<tr class="memdesc:a781d9ca55b68f80e1156815778d92f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method, to be used as a callback function pointer, which handles a credits inserted button click event. <br /></td></tr>
+<tr class="separator:a781d9ca55b68f80e1156815778d92f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac701bd504e66682962558c13035dd4d4"><td class="memItemLeft" align="right" valign="top"><a id="ac701bd504e66682962558c13035dd4d4" name="ac701bd504e66682962558c13035dd4d4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreditsOutButton</b> (std::map&lt; std::string, void * &gt; argsMap)</td></tr>
+<tr class="memdesc:ac701bd504e66682962558c13035dd4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method, to be used as a callback function pointer, which handles a credits removed button click event. <br /></td></tr>
+<tr class="separator:ac701bd504e66682962558c13035dd4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0059649a1c87371abe5e61df08a194e"><td class="memItemLeft" align="right" valign="top"><a id="aa0059649a1c87371abe5e61df08a194e" name="aa0059649a1c87371abe5e61df08a194e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>particleDeathCondition</b> (std::map&lt; std::string, void * &gt; argsMap)</td></tr>
+<tr class="memdesc:aa0059649a1c87371abe5e61df08a194e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method, to be used as a callback function pointer, which handles a particle death verification event. <br /></td></tr>
+<tr class="separator:aa0059649a1c87371abe5e61df08a194e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -180,6 +260,34 @@ Private Attributes</h2></td></tr>
 sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><b>m_winSize</b></td></tr>
 <tr class="memdesc:ac1e4babc297fbdd520c7ff8ddd2edd9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the \pm_currentWindow size. <br /></td></tr>
 <tr class="separator:ac1e4babc297fbdd520c7ff8ddd2edd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af558d0085d1e39d15fd92fe5b4c5c4e8"><td class="memItemLeft" align="right" valign="top"><a id="af558d0085d1e39d15fd92fe5b4c5c4e8" name="af558d0085d1e39d15fd92fe5b4c5c4e8"></a>
+std::map&lt; std::string, std::pair&lt; boost::shared_ptr&lt; <a class="el" href="class_window_interface.html">WindowInterface</a> &gt;, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shapeMap</b></td></tr>
+<tr class="memdesc:af558d0085d1e39d15fd92fe5b4c5c4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> references, one for each allocated shape, and its render layer (is the owner). <br /></td></tr>
+<tr class="separator:af558d0085d1e39d15fd92fe5b4c5c4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ec0eee566f2d8a2b1ae821fe122ccb"><td class="memItemLeft" align="right" valign="top"><a id="a13ec0eee566f2d8a2b1ae821fe122ccb" name="a13ec0eee566f2d8a2b1ae821fe122ccb"></a>
+std::map&lt; std::string, boost::shared_ptr&lt; <a class="el" href="class_button_interface.html">ButtonInterface</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_buttonMap</b></td></tr>
+<tr class="memdesc:a13ec0eee566f2d8a2b1ae821fe122ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_button_interface.html" title="ButtonInterface class used to interface buttons to be rendered on a window and enables reactions to w...">ButtonInterface</a> references, one for each allocated button (is the owner). <br /></td></tr>
+<tr class="separator:a13ec0eee566f2d8a2b1ae821fe122ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c3096ad0093e7c9f427b686b86c14f"><td class="memItemLeft" align="right" valign="top"><a id="a00c3096ad0093e7c9f427b686b86c14f" name="a00c3096ad0093e7c9f427b686b86c14f"></a>
+std::map&lt; std::string, boost::shared_ptr&lt; <a class="el" href="class_particle_interface.html">ParticleInterface</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_particleMap</b></td></tr>
+<tr class="memdesc:a00c3096ad0093e7c9f427b686b86c14f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_particle_interface.html" title="ParticleInterface class hadles common behaviour of particles and their properties,...">ParticleInterface</a> references, one for each allocated particle (is the owner). <br /></td></tr>
+<tr class="separator:a00c3096ad0093e7c9f427b686b86c14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0070a2aa438cbecc1582259628acae00"><td class="memItemLeft" align="right" valign="top"><a id="a0070a2aa438cbecc1582259628acae00" name="a0070a2aa438cbecc1582259628acae00"></a>
+boost::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentWindow</b></td></tr>
+<tr class="memdesc:a0070a2aa438cbecc1582259628acae00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the current window pointer, to where game is supposed to be currently being rendered to. <br /></td></tr>
+<tr class="separator:a0070a2aa438cbecc1582259628acae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6731747d4449dab6e8f9c8e2c00e0b"><td class="memItemLeft" align="right" valign="top"><a id="abf6731747d4449dab6e8f9c8e2c00e0b" name="abf6731747d4449dab6e8f9c8e2c00e0b"></a>
+<a class="el" href="struct_casino_game_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentState</b></td></tr>
+<tr class="memdesc:abf6731747d4449dab6e8f9c8e2c00e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the current game state. <br /></td></tr>
+<tr class="separator:abf6731747d4449dab6e8f9c8e2c00e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2fb14480d73a32a735ad89915b82ad"><td class="memItemLeft" align="right" valign="top"><a id="a8a2fb14480d73a32a735ad89915b82ad" name="a8a2fb14480d73a32a735ad89915b82ad"></a>
+std::map&lt; std::string, boost::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_soundMap</b></td></tr>
+<tr class="memdesc:a8a2fb14480d73a32a735ad89915b82ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> references, one for each allocated particle (is the owner). <br /></td></tr>
+<tr class="separator:a8a2fb14480d73a32a735ad89915b82ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bf5b098cc2d25be9780f0bcab275bb"><td class="memItemLeft" align="right" valign="top"><a id="ae1bf5b098cc2d25be9780f0bcab275bb" name="ae1bf5b098cc2d25be9780f0bcab275bb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numberOfParticleToGenerate</b></td></tr>
+<tr class="memdesc:ae1bf5b098cc2d25be9780f0bcab275bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the numebr of particles to be generated. <br /></td></tr>
+<tr class="separator:ae1bf5b098cc2d25be9780f0bcab275bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33058a5228c3006e12b4d69d73ac1014"><td class="memItemLeft" align="right" valign="top"><a id="a33058a5228c3006e12b4d69d73ac1014" name="a33058a5228c3006e12b4d69d73ac1014"></a>
 std::map&lt; std::string, std::pair&lt; std::shared_ptr&lt; <a class="el" href="class_window_interface.html">WindowInterface</a> &gt;, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shapeMap</b></td></tr>
 <tr class="memdesc:a33058a5228c3006e12b4d69d73ac1014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> references, one for each allocated shape, and its render layer (is the owner). <br /></td></tr>
@@ -196,24 +304,42 @@ std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_particle
 std::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentWindow</b></td></tr>
 <tr class="memdesc:a5b75154b48db3c96c320c908455015b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the current window pointer, to where game is supposed to be currently being rendered to. <br /></td></tr>
 <tr class="separator:a5b75154b48db3c96c320c908455015b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6731747d4449dab6e8f9c8e2c00e0b"><td class="memItemLeft" align="right" valign="top"><a id="abf6731747d4449dab6e8f9c8e2c00e0b" name="abf6731747d4449dab6e8f9c8e2c00e0b"></a>
-<a class="el" href="struct_casino_game_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentState</b></td></tr>
-<tr class="memdesc:abf6731747d4449dab6e8f9c8e2c00e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the current game state. <br /></td></tr>
-<tr class="separator:abf6731747d4449dab6e8f9c8e2c00e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a267534970a5a46117d53e158097e4e9f"><td class="memItemLeft" align="right" valign="top"><a id="a267534970a5a46117d53e158097e4e9f" name="a267534970a5a46117d53e158097e4e9f"></a>
 std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="class_custom_sound.html">CustomSound</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_soundMap</b></td></tr>
 <tr class="memdesc:a267534970a5a46117d53e158097e4e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the map of <a class="el" href="class_custom_sound.html" title="CustomSound class which inherits Mucis object, for utility puposes of playing sonds uninterruptly,...">CustomSound</a> references, one for each allocated particle (is the owner). <br /></td></tr>
 <tr class="separator:a267534970a5a46117d53e158097e4e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1bf5b098cc2d25be9780f0bcab275bb"><td class="memItemLeft" align="right" valign="top"><a id="ae1bf5b098cc2d25be9780f0bcab275bb" name="ae1bf5b098cc2d25be9780f0bcab275bb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numberOfParticleToGenerate</b></td></tr>
-<tr class="memdesc:ae1bf5b098cc2d25be9780f0bcab275bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the numebr of particles to be generated. <br /></td></tr>
-<tr class="separator:ae1bf5b098cc2d25be9780f0bcab275bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_casino_game.html" title="CasinoGame class used to run and handle all the variables necessary to run a casino game object,...">CasinoGame</a> class used to run and handle all the variables necessary to run a casino game object, from initialization to communication between objects on window evets. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a63c520acb9037d59463a1f2e925f095c" name="a63c520acb9037d59463a1f2e925f095c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c520acb9037d59463a1f2e925f095c">&#9670;&nbsp;</a></span>CasinoGame() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CasinoGame::CasinoGame </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>windowModel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowModel</td><td>The window model to run the game on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a57d6252e6391ad38d9a98861438f501a" name="a57d6252e6391ad38d9a98861438f501a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57d6252e6391ad38d9a98861438f501a">&#9670;&nbsp;</a></span>CasinoGame()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d6252e6391ad38d9a98861438f501a">&#9670;&nbsp;</a></span>CasinoGame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,8 +365,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numberOfParticleToGe
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aad37e36268a0a0c9239908e240df713b" name="aad37e36268a0a0c9239908e240df713b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad37e36268a0a0c9239908e240df713b">&#9670;&nbsp;</a></span>switchToWindow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoGame::switchToWindow </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_window_model.html">WindowModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>windowModel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which switches the render window of the game and re-instatiates it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window object reference. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> </dd></dl>
+
+</div>
+</div>
 <a id="a3fb52b95d37b8f200e03553116271a30" name="a3fb52b95d37b8f200e03553116271a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb52b95d37b8f200e03553116271a30">&#9670;&nbsp;</a></span>switchToWindow()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb52b95d37b8f200e03553116271a30">&#9670;&nbsp;</a></span>switchToWindow() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +420,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numberOfParticleToGe
 </div>
 </div>
 <a id="ac740af505c584c58d3f45da4c4d9e8ee" name="ac740af505c584c58d3f45da4c4d9e8ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac740af505c584c58d3f45da4c4d9e8ee">&#9670;&nbsp;</a></span>updateButtonsOnWindowEvent()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac740af505c584c58d3f45da4c4d9e8ee">&#9670;&nbsp;</a></span>updateButtonsOnWindowEvent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoGame::updateButtonsOnWindowEvent </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Event &amp;&#160;</td>
+          <td class="paramname"><em>evnt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which, when called, updates the buttons according to an event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evnt</td><td>The window event. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_window_interface.html" title="WindowInterface class is an interface to enable objects to be rendered to be drawn to a specific wind...">WindowInterface</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac740af505c584c58d3f45da4c4d9e8ee" name="ac740af505c584c58d3f45da4c4d9e8ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac740af505c584c58d3f45da4c4d9e8ee">&#9670;&nbsp;</a></span>updateButtonsOnWindowEvent() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +474,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numberOfParticleToGe
 </div>
 </div>
 <a id="a4df497702305f99de02d0c30036af63a" name="a4df497702305f99de02d0c30036af63a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4df497702305f99de02d0c30036af63a">&#9670;&nbsp;</a></span>updatePhysics()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df497702305f99de02d0c30036af63a">&#9670;&nbsp;</a></span>updatePhysics() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CasinoGame::updatePhysics </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>deltaTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method which updates the physics of the internal particles on \pm_particleMap based on deltaTime. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>The time interval to update the differential equations. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4df497702305f99de02d0c30036af63a" name="a4df497702305f99de02d0c30036af63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df497702305f99de02d0c30036af63a">&#9670;&nbsp;</a></span>updatePhysics() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,8 +526,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numberOfParticleToGe
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/<a class="el" href="_casino_game_8hpp_source.html">CasinoGame.hpp</a></li>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/CasinoGame.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/include/<a class="el" href="_linux_2include_2_casino_game_8hpp_source.html">CasinoGame.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/<a class="el" href="_windows_2_a_casino_game_2_my_objects_2_casino_game_8hpp_source.html">CasinoGame.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/src/CasinoGame.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/CasinoGame.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -74,7 +74,7 @@ $(function() {
 <p><a class="el" href="class_button_interface.html" title="ButtonInterface class used to interface buttons to be rendered on a window and enables reactions to w...">ButtonInterface</a> class used to interface buttons to be rendered on a window and enables reactions to window events, with non parameter specific callbacks funtions.  
  <a href="class_button_interface.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_button_interface_8hpp_source.html">ButtonInterface.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_linux_2include_2_button_interface_8hpp_source.html">ButtonInterface.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ButtonInterface:</div>
 <div class="dyncontent">
@@ -82,6 +82,7 @@ Inheritance diagram for ButtonInterface:</div>
   <img src="class_button_interface.png" usemap="#ButtonInterface_map" alt=""/>
   <map id="ButtonInterface_map" name="ButtonInterface_map">
 <area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="0,56,97,80"/>
+<area href="class_button_shape.html" title="ButtonShape class used to handle button common behaviours buttons consists TextShapes with ButtonInte..." alt="ButtonShape" shape="rect" coords="107,56,204,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -101,21 +102,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6798984483089c58edcea8c7e613d0ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button_interface.html#a6798984483089c58edcea8c7e613d0ce">setClickCallback</a> (void(*callback)(std::map&lt; std::string, void * &gt;), const std::map&lt; std::string, void * &gt; &amp;argsMap)</td></tr>
 <tr class="memdesc:a6798984483089c58edcea8c7e613d0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which sets the click callback, in case it's called inside onWindowEvent.  <a href="class_button_interface.html#a6798984483089c58edcea8c7e613d0ce">More...</a><br /></td></tr>
 <tr class="separator:a6798984483089c58edcea8c7e613d0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dab9aa7870edc874211e9eddbc2b88e"><td class="memItemLeft" align="right" valign="top"><a id="a9dab9aa7870edc874211e9eddbc2b88e" name="a9dab9aa7870edc874211e9eddbc2b88e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ButtonInterface</b> ()</td></tr>
+<tr class="memdesc:a9dab9aa7870edc874211e9eddbc2b88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, sets the args map to nullptr. <br /></td></tr>
+<tr class="separator:a9dab9aa7870edc874211e9eddbc2b88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8a8f960918024f354f9bb2d1d08f20"><td class="memItemLeft" align="right" valign="top"><a id="a9b8a8f960918024f354f9bb2d1d08f20" name="a9b8a8f960918024f354f9bb2d1d08f20"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~ButtonInterface</b> ()=default</td></tr>
+<tr class="memdesc:a9b8a8f960918024f354f9bb2d1d08f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:a9b8a8f960918024f354f9bb2d1d08f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb03a5ae5bb0523d915330c8baae99b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button_interface.html#a9eb03a5ae5bb0523d915330c8baae99b">onWindowEvent</a> (sf::RenderWindow *window, const sf::Event &amp;evnt)=0</td></tr>
+<tr class="memdesc:a9eb03a5ae5bb0523d915330c8baae99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to be called on a window event.  <a href="class_button_interface.html#a9eb03a5ae5bb0523d915330c8baae99b">More...</a><br /></td></tr>
+<tr class="separator:a9eb03a5ae5bb0523d915330c8baae99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9768bddd006d230d8ebf5f9af6c346"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button_interface.html#a3b9768bddd006d230d8ebf5f9af6c346">setClickCallback</a> (void(*callback)(std::map&lt; std::string, void * &gt;), const std::map&lt; std::string, void * &gt; &amp;argsMap)</td></tr>
+<tr class="memdesc:a3b9768bddd006d230d8ebf5f9af6c346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method which sets the click callback, in case it's called inside onWindowEvent.  <a href="class_button_interface.html#a3b9768bddd006d230d8ebf5f9af6c346">More...</a><br /></td></tr>
+<tr class="separator:a3b9768bddd006d230d8ebf5f9af6c346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:abe94861c7c5e44beca23fa4aefa8ed74"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button_interface.html#abe94861c7c5e44beca23fa4aefa8ed74">p_clickCallback</a> )(std::map&lt; std::string, void * &gt;)</td></tr>
-<tr class="memdesc:abe94861c7c5e44beca23fa4aefa8ed74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the callback function to be called when setClickCallback is evoked.  <a href="class_button_interface.html#abe94861c7c5e44beca23fa4aefa8ed74">More...</a><br /></td></tr>
-<tr class="separator:abe94861c7c5e44beca23fa4aefa8ed74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e84f6eecd5f3622ac4f98f9c22269d"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button_interface.html#a92e84f6eecd5f3622ac4f98f9c22269d">p_clickCallbackArgsMap</a></td></tr>
-<tr class="memdesc:a92e84f6eecd5f3622ac4f98f9c22269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the parameters of the callback function to be called when setClickCallback is evoked.  <a href="class_button_interface.html#a92e84f6eecd5f3622ac4f98f9c22269d">More...</a><br /></td></tr>
-<tr class="separator:a92e84f6eecd5f3622ac4f98f9c22269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee932780fcbd96443e2bbfb3c67f8ea"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button_interface.html#a5ee932780fcbd96443e2bbfb3c67f8ea">p_clickCallback</a> )(std::map&lt; std::string, void * &gt;)</td></tr>
+<tr class="memdesc:a5ee932780fcbd96443e2bbfb3c67f8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the callback function to be called when setClickCallback is evoked.  <a href="class_button_interface.html#a5ee932780fcbd96443e2bbfb3c67f8ea">More...</a><br /></td></tr>
+<tr class="separator:a5ee932780fcbd96443e2bbfb3c67f8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fa39ba207b0876926ec4df07c66c46"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button_interface.html#a04fa39ba207b0876926ec4df07c66c46">p_clickCallbackArgsMap</a></td></tr>
+<tr class="memdesc:a04fa39ba207b0876926ec4df07c66c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the parameters of the callback function to be called when setClickCallback is evoked.  <a href="class_button_interface.html#a04fa39ba207b0876926ec4df07c66c46">More...</a><br /></td></tr>
+<tr class="separator:a04fa39ba207b0876926ec4df07c66c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_button_interface.html" title="ButtonInterface class used to interface buttons to be rendered on a window and enables reactions to w...">ButtonInterface</a> class used to interface buttons to be rendered on a window and enables reactions to window events, with non parameter specific callbacks funtions. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9eb03a5ae5bb0523d915330c8baae99b" name="a9eb03a5ae5bb0523d915330c8baae99b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eb03a5ae5bb0523d915330c8baae99b">&#9670;&nbsp;</a></span>onWindowEvent()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb03a5ae5bb0523d915330c8baae99b">&#9670;&nbsp;</a></span>onWindowEvent() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,12 +172,59 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_button_shape.html#ad6297cbdd03ce3d4c5a75d36638e2076">ButtonShape</a>.</p>
+<p>Implemented in <a class="el" href="class_button_shape.html#ad6297cbdd03ce3d4c5a75d36638e2076">ButtonShape</a>, and <a class="el" href="class_button_shape.html#a65aa47208f671bc736381741dd4e977f">ButtonShape</a>.</p>
+
+</div>
+</div>
+<a id="a9eb03a5ae5bb0523d915330c8baae99b" name="a9eb03a5ae5bb0523d915330c8baae99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb03a5ae5bb0523d915330c8baae99b">&#9670;&nbsp;</a></span>onWindowEvent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ButtonInterface::onWindowEvent </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::Event &amp;&#160;</td>
+          <td class="paramname"><em>evnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method to be called on a window event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>The window object reference. </td></tr>
+    <tr><td class="paramname">evnt</td><td>Event type occured on the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_button_shape.html#ad6297cbdd03ce3d4c5a75d36638e2076">ButtonShape</a>, and <a class="el" href="class_button_shape.html#a65aa47208f671bc736381741dd4e977f">ButtonShape</a>.</p>
 
 </div>
 </div>
 <a id="a6798984483089c58edcea8c7e613d0ce" name="a6798984483089c58edcea8c7e613d0ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6798984483089c58edcea8c7e613d0ce">&#9670;&nbsp;</a></span>setClickCallback()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6798984483089c58edcea8c7e613d0ce">&#9670;&nbsp;</a></span>setClickCallback() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,9 +269,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="abe94861c7c5e44beca23fa4aefa8ed74" name="abe94861c7c5e44beca23fa4aefa8ed74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe94861c7c5e44beca23fa4aefa8ed74">&#9670;&nbsp;</a></span>p_clickCallback</h2>
+<a id="a3b9768bddd006d230d8ebf5f9af6c346" name="a3b9768bddd006d230d8ebf5f9af6c346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9768bddd006d230d8ebf5f9af6c346">&#9670;&nbsp;</a></span>setClickCallback() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +279,54 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void(* ButtonInterface::p_clickCallback) (std::map&lt; std::string, void * &gt;)</td>
+          <td class="memname">virtual void ButtonInterface::setClickCallback </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(std::map&lt; std::string, void * &gt;)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, void * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>argsMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method which sets the click callback, in case it's called inside onWindowEvent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>A function pointer. </td></tr>
+    <tr><td class="paramname">argsMap</td><td>The function's arguments map. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_button_interface.html#a9eb03a5ae5bb0523d915330c8baae99b" title="Method to be called on a window event.">onWindowEvent()</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5ee932780fcbd96443e2bbfb3c67f8ea" name="a5ee932780fcbd96443e2bbfb3c67f8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee932780fcbd96443e2bbfb3c67f8ea">&#9670;&nbsp;</a></span>p_clickCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* ButtonInterface::p_clickCallback)(std::map&lt; std::string, void * &gt;)</td>
         </tr>
       </table>
   </td>
@@ -233,8 +341,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a92e84f6eecd5f3622ac4f98f9c22269d" name="a92e84f6eecd5f3622ac4f98f9c22269d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e84f6eecd5f3622ac4f98f9c22269d">&#9670;&nbsp;</a></span>p_clickCallbackArgsMap</h2>
+<a id="a04fa39ba207b0876926ec4df07c66c46" name="a04fa39ba207b0876926ec4df07c66c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fa39ba207b0876926ec4df07c66c46">&#9670;&nbsp;</a></span>p_clickCallbackArgsMap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +351,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string, void*&gt; ButtonInterface::p_clickCallbackArgsMap</td>
+          <td class="memname">std::map&lt; std::string, void * &gt; ButtonInterface::p_clickCallbackArgsMap</td>
         </tr>
       </table>
   </td>
@@ -259,8 +367,10 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/<a class="el" href="_button_interface_8hpp_source.html">ButtonInterface.hpp</a></li>
-<li>C:/Users/Pedro/Desktop/ACasinoGame/ACasinoGame/MyObjects/ButtonInterface.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/include/<a class="el" href="_linux_2include_2_button_interface_8hpp_source.html">ButtonInterface.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/<a class="el" href="_windows_2_a_casino_game_2_my_objects_2_button_interface_8hpp_source.html">ButtonInterface.hpp</a></li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Linux/src/ButtonInterface.cpp</li>
+<li>C:/Users/Pedro/Desktop/ACasinoGame/Windows/ACasinoGame/MyObjects/ButtonInterface.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
